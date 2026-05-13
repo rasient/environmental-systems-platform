@@ -1,3 +1,97 @@
+export const ui = {
+  "hu": {
+    "language": "Nyelv",
+    "modules": "Modulok",
+    "progress": "Haladás",
+    "subtitle": "Többnyelvű, lépésről lépésre haladó környezeti rendszerek tanulóplatform.",
+    "explanation": "Magyarázat",
+    "example": "Példa / országkontekstus",
+    "insight": "Systems insight",
+    "back": "vissza",
+    "next": "next",
+    "step": "LÉPÉS",
+    "hero": "Környezeti Rendszerek Tanulóplatform"
+  },
+  "en": {
+    "language": "Language",
+    "modules": "Modules",
+    "progress": "Progress",
+    "subtitle": "A multilingual, step-by-step environmental systems learning platform.",
+    "explanation": "Explanation",
+    "example": "Example / country context",
+    "insight": "Systems insight",
+    "back": "back",
+    "next": "next",
+    "step": "STEP",
+    "hero": "Environmental Systems Learning Platform"
+  },
+  "de": {
+    "language": "Sprache",
+    "modules": "Module",
+    "progress": "Fortschritt",
+    "subtitle": "Eine mehrsprachige Lernplattform für Umweltsysteme Schritt für Schritt.",
+    "explanation": "Erklärung",
+    "example": "Beispiel / Länderkontext",
+    "insight": "System-Einsicht",
+    "back": "zurück",
+    "next": "weiter",
+    "step": "SCHRITT",
+    "hero": "Lernplattform für Umweltsysteme"
+  },
+  "jp": {
+    "language": "言語",
+    "modules": "モジュール",
+    "progress": "進捗",
+    "subtitle": "多言語・ステップ形式の環境システム学習プラットフォーム。",
+    "explanation": "説明",
+    "example": "例 / 国別コンテキスト",
+    "insight": "システム視点",
+    "back": "戻る",
+    "next": "次へ",
+    "step": "ステップ",
+    "hero": "環境システム学習プラットフォーム"
+  },
+  "zh": {
+    "language": "语言",
+    "modules": "模块",
+    "progress": "进度",
+    "subtitle": "多语言、一步一步学习环境系统的平台。",
+    "explanation": "说明",
+    "example": "案例 / 国家背景",
+    "insight": "系统洞察",
+    "back": "返回",
+    "next": "下一步",
+    "step": "步骤",
+    "hero": "环境系统学习平台"
+  },
+  "fr": {
+    "language": "Langue",
+    "modules": "Modules",
+    "progress": "Progression",
+    "subtitle": "Plateforme multilingue d’apprentissage des systèmes environnementaux étape par étape.",
+    "explanation": "Explication",
+    "example": "Exemple / contexte national",
+    "insight": "Vision systémique",
+    "back": "retour",
+    "next": "suivant",
+    "step": "ÉTAPE",
+    "hero": "Plateforme d’apprentissage des systèmes environnementaux"
+  },
+  "es": {
+    "language": "Idioma",
+    "modules": "Módulos",
+    "progress": "Progreso",
+    "subtitle": "Plataforma multilingüe para aprender sistemas ambientales paso a paso.",
+    "explanation": "Explicación",
+    "example": "Ejemplo / contexto nacional",
+    "insight": "Perspectiva sistémica",
+    "back": "atrás",
+    "next": "siguiente",
+    "step": "PASO",
+    "hero": "Plataforma de aprendizaje de sistemas ambientales"
+  }
+};
+
 export const languages = {
   "hu": "Magyar",
   "en": "English",
@@ -7,30 +101,31 @@ export const languages = {
   "fr": "Français",
   "es": "Español"
 };
+
 export const modules = [
   {
     "id": "systems",
     "titles": {
       "hu": "Alaprendszer-logika",
-      "en": "Alaprendszer-logika",
-      "de": "Alaprendszer-logika",
-      "jp": "Alaprendszer-logika",
-      "zh": "Alaprendszer-logika",
-      "fr": "Alaprendszer-logika",
-      "es": "Alaprendszer-logika"
+      "en": "Core systems logic",
+      "de": "Grundlogik von Systemen",
+      "jp": "基本システム論理",
+      "zh": "核心系统逻辑",
+      "fr": "Logique des systèmes",
+      "es": "Lógica de sistemas"
     },
     "steps": {
       "hu": [
         {
           "title": "Környezeti rendszerek alapja",
           "body": "A legtöbb környezeti probléma nem egyetlen komponens hibája, hanem több rendszer közötti koordinációs probléma. Hulladék, vízszennyezés, energia, közlekedés és városi hősziget mind összekapcsolt rendszerek.",
-          "example": "Példa: egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
+          "example": "Egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
           "insight": "A környezetvédelem nem külön világ, hanem civilizációs működtetési réteg."
         },
         {
           "title": "Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
@@ -48,25 +143,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "Környezeti rendszerek alapja",
+          "title": "Localized starter version based on the Hungarian source content: Környezeti rendszerek alapja",
           "body": "A legtöbb környezeti probléma nem egyetlen komponens hibája, hanem több rendszer közötti koordinációs probléma. Hulladék, vízszennyezés, energia, közlekedés és városi hősziget mind összekapcsolt rendszerek.",
-          "example": "Példa: egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
+          "example": "Egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
           "insight": "A környezetvédelem nem külön világ, hanem civilizációs működtetési réteg."
         },
         {
-          "title": "Input → Process → Output → Feedback",
+          "title": "Localized starter version based on the Hungarian source content: Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
-          "title": "Monitoring mint érzékszerv",
+          "title": "Localized starter version based on the Hungarian source content: Monitoring mint érzékszerv",
           "body": "A monitoring a rendszer érzékszerve: mér, jelez, adatot ad, és segíti a döntést.",
           "example": "Mint az emberi idegrendszer vagy egy AI log-rendszere: érzékeli, ha valami eltér a normálistól.",
           "insight": "Ha nem mérünk, nem látjuk, hol romlik a rendszer."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Localized starter version based on the Hungarian source content: Mini kérdés",
           "body": "Egy városban mi lenne a legfontosabb első mérés: levegő, víz, hulladék, zaj vagy energiahasználat?",
           "example": "Nincs egyetlen jó válasz: a helyi kockázat és kapacitás dönti el.",
           "insight": "Systems thinking = először a kapcsolódásokat nézzük, nem csak az egyes elemeket."
@@ -74,25 +169,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "Környezeti rendszerek alapja",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Környezeti rendszerek alapja",
           "body": "A legtöbb környezeti probléma nem egyetlen komponens hibája, hanem több rendszer közötti koordinációs probléma. Hulladék, vízszennyezés, energia, közlekedés és városi hősziget mind összekapcsolt rendszerek.",
-          "example": "Példa: egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
+          "example": "Egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
           "insight": "A környezetvédelem nem külön világ, hanem civilizációs működtetési réteg."
         },
         {
-          "title": "Input → Process → Output → Feedback",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
-          "title": "Monitoring mint érzékszerv",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Monitoring mint érzékszerv",
           "body": "A monitoring a rendszer érzékszerve: mér, jelez, adatot ad, és segíti a döntést.",
           "example": "Mint az emberi idegrendszer vagy egy AI log-rendszere: érzékeli, ha valami eltér a normálistól.",
           "insight": "Ha nem mérünk, nem látjuk, hol romlik a rendszer."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Mini kérdés",
           "body": "Egy városban mi lenne a legfontosabb első mérés: levegő, víz, hulladék, zaj vagy energiahasználat?",
           "example": "Nincs egyetlen jó válasz: a helyi kockázat és kapacitás dönti el.",
           "insight": "Systems thinking = először a kapcsolódásokat nézzük, nem csak az egyes elemeket."
@@ -100,25 +195,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "Környezeti rendszerek alapja",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Környezeti rendszerek alapja",
           "body": "A legtöbb környezeti probléma nem egyetlen komponens hibája, hanem több rendszer közötti koordinációs probléma. Hulladék, vízszennyezés, energia, közlekedés és városi hősziget mind összekapcsolt rendszerek.",
-          "example": "Példa: egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
+          "example": "Egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
           "insight": "A környezetvédelem nem külön világ, hanem civilizációs működtetési réteg."
         },
         {
-          "title": "Input → Process → Output → Feedback",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
-          "title": "Monitoring mint érzékszerv",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Monitoring mint érzékszerv",
           "body": "A monitoring a rendszer érzékszerve: mér, jelez, adatot ad, és segíti a döntést.",
           "example": "Mint az emberi idegrendszer vagy egy AI log-rendszere: érzékeli, ha valami eltér a normálistól.",
           "insight": "Ha nem mérünk, nem látjuk, hol romlik a rendszer."
         },
         {
-          "title": "Mini kérdés",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Mini kérdés",
           "body": "Egy városban mi lenne a legfontosabb első mérés: levegő, víz, hulladék, zaj vagy energiahasználat?",
           "example": "Nincs egyetlen jó válasz: a helyi kockázat és kapacitás dönti el.",
           "insight": "Systems thinking = először a kapcsolódásokat nézzük, nem csak az egyes elemeket."
@@ -126,25 +221,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "Környezeti rendszerek alapja",
+          "title": "基于匈牙利语原始内容的本地化初版： Környezeti rendszerek alapja",
           "body": "A legtöbb környezeti probléma nem egyetlen komponens hibája, hanem több rendszer közötti koordinációs probléma. Hulladék, vízszennyezés, energia, közlekedés és városi hősziget mind összekapcsolt rendszerek.",
-          "example": "Példa: egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
+          "example": "Egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
           "insight": "A környezetvédelem nem külön világ, hanem civilizációs működtetési réteg."
         },
         {
-          "title": "Input → Process → Output → Feedback",
+          "title": "基于匈牙利语原始内容的本地化初版： Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
-          "title": "Monitoring mint érzékszerv",
+          "title": "基于匈牙利语原始内容的本地化初版： Monitoring mint érzékszerv",
           "body": "A monitoring a rendszer érzékszerve: mér, jelez, adatot ad, és segíti a döntést.",
           "example": "Mint az emberi idegrendszer vagy egy AI log-rendszere: érzékeli, ha valami eltér a normálistól.",
           "insight": "Ha nem mérünk, nem látjuk, hol romlik a rendszer."
         },
         {
-          "title": "Mini kérdés",
+          "title": "基于匈牙利语原始内容的本地化初版： Mini kérdés",
           "body": "Egy városban mi lenne a legfontosabb első mérés: levegő, víz, hulladék, zaj vagy energiahasználat?",
           "example": "Nincs egyetlen jó válasz: a helyi kockázat és kapacitás dönti el.",
           "insight": "Systems thinking = először a kapcsolódásokat nézzük, nem csak az egyes elemeket."
@@ -152,25 +247,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "Környezeti rendszerek alapja",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Környezeti rendszerek alapja",
           "body": "A legtöbb környezeti probléma nem egyetlen komponens hibája, hanem több rendszer közötti koordinációs probléma. Hulladék, vízszennyezés, energia, közlekedés és városi hősziget mind összekapcsolt rendszerek.",
-          "example": "Példa: egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
+          "example": "Egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
           "insight": "A környezetvédelem nem külön világ, hanem civilizációs működtetési réteg."
         },
         {
-          "title": "Input → Process → Output → Feedback",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
-          "title": "Monitoring mint érzékszerv",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Monitoring mint érzékszerv",
           "body": "A monitoring a rendszer érzékszerve: mér, jelez, adatot ad, és segíti a döntést.",
           "example": "Mint az emberi idegrendszer vagy egy AI log-rendszere: érzékeli, ha valami eltér a normálistól.",
           "insight": "Ha nem mérünk, nem látjuk, hol romlik a rendszer."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Mini kérdés",
           "body": "Egy városban mi lenne a legfontosabb első mérés: levegő, víz, hulladék, zaj vagy energiahasználat?",
           "example": "Nincs egyetlen jó válasz: a helyi kockázat és kapacitás dönti el.",
           "insight": "Systems thinking = először a kapcsolódásokat nézzük, nem csak az egyes elemeket."
@@ -178,25 +273,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "Környezeti rendszerek alapja",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Környezeti rendszerek alapja",
           "body": "A legtöbb környezeti probléma nem egyetlen komponens hibája, hanem több rendszer közötti koordinációs probléma. Hulladék, vízszennyezés, energia, közlekedés és városi hősziget mind összekapcsolt rendszerek.",
-          "example": "Példa: egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
+          "example": "Egy város levegőproblémája egyszerre közlekedési, energiai, lakhatási és egészségügyi kérdés.",
           "insight": "A környezetvédelem nem külön világ, hanem civilizációs működtetési réteg."
         },
         {
-          "title": "Input → Process → Output → Feedback",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
-          "title": "Monitoring mint érzékszerv",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Monitoring mint érzékszerv",
           "body": "A monitoring a rendszer érzékszerve: mér, jelez, adatot ad, és segíti a döntést.",
           "example": "Mint az emberi idegrendszer vagy egy AI log-rendszere: érzékeli, ha valami eltér a normálistól.",
           "insight": "Ha nem mérünk, nem látjuk, hol romlik a rendszer."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Mini kérdés",
           "body": "Egy városban mi lenne a legfontosabb első mérés: levegő, víz, hulladék, zaj vagy energiahasználat?",
           "example": "Nincs egyetlen jó válasz: a helyi kockázat és kapacitás dönti el.",
           "insight": "Systems thinking = először a kapcsolódásokat nézzük, nem csak az egyes elemeket."
@@ -208,12 +303,12 @@ export const modules = [
     "id": "monitoring",
     "titles": {
       "hu": "Környezeti monitoring",
-      "en": "Környezeti monitoring",
-      "de": "Környezeti monitoring",
-      "jp": "Környezeti monitoring",
-      "zh": "Környezeti monitoring",
-      "fr": "Környezeti monitoring",
-      "es": "Környezeti monitoring"
+      "en": "Environmental monitoring",
+      "de": "Umweltmonitoring",
+      "jp": "環境モニタリング",
+      "zh": "环境监测",
+      "fr": "Surveillance environnementale",
+      "es": "Monitoreo ambiental"
     },
     "steps": {
       "hu": [
@@ -244,25 +339,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "Mit jelent a monitoring?",
+          "title": "Localized starter version based on the Hungarian source content: Mit jelent a monitoring?",
           "body": "Monitoring = adatgyűjtés + megfigyelés + értelmezés. Nem csak mérés, hanem döntési infrastruktúra.",
           "example": "Levegő: PM2.5/PM10, NOx, SO₂. Víz: pH, oxigén, baktériumok, nehézfémek. Talaj: olaj, nitrát, toxikus anyagok. Zaj: közlekedés, ipar, építkezés.",
           "insight": "A civilizáció sokszor nem adat-, hanem reakcióhiány miatt késik."
         },
         {
-          "title": "Levegő, víz, talaj, zaj",
+          "title": "Localized starter version based on the Hungarian source content: Levegő, víz, talaj, zaj",
           "body": "A környezetvédelmi technikus több közegben dolgozhat: levegő, víz, talaj, zaj és rezgés.",
           "example": "Egy ipari környezetben egyszerre lehet kibocsátás, zaj, hulladék és vízhasználati probléma.",
           "insight": "A monitoring több réteg adatát kapcsolja össze."
         },
         {
-          "title": "AI és monitoring",
+          "title": "Localized starter version based on the Hungarian source content: AI és monitoring",
           "body": "AI használható anomáliafelismerésre, előrejelzésre és monitoring optimalizálásra, de a valóságot továbbra is mérni kell.",
           "example": "Szenzoradatokból korai hiba jelezhető: szivattyú, levegőszennyezés, zajcsúcs, vízminőség-romlás.",
           "insight": "AI nem helyettesíti a mérést; felerősíti az értelmezést."
         },
         {
-          "title": "Országpéldák",
+          "title": "Localized starter version based on the Hungarian source content: Országpéldák",
           "body": "EU: compliance-heavy monitoring. USA: államonként eltérő rendszerek. Kína: nagy skálájú szenzorhálózatok. Afrika: sok helyen mobil/lokális mérési megoldások.",
           "example": "Ugyanaz a technológia más governance-környezetben másképp működik.",
           "insight": "A monitoring minősége meghatározza a döntés minőségét."
@@ -270,25 +365,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "Mit jelent a monitoring?",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Mit jelent a monitoring?",
           "body": "Monitoring = adatgyűjtés + megfigyelés + értelmezés. Nem csak mérés, hanem döntési infrastruktúra.",
           "example": "Levegő: PM2.5/PM10, NOx, SO₂. Víz: pH, oxigén, baktériumok, nehézfémek. Talaj: olaj, nitrát, toxikus anyagok. Zaj: közlekedés, ipar, építkezés.",
           "insight": "A civilizáció sokszor nem adat-, hanem reakcióhiány miatt késik."
         },
         {
-          "title": "Levegő, víz, talaj, zaj",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Levegő, víz, talaj, zaj",
           "body": "A környezetvédelmi technikus több közegben dolgozhat: levegő, víz, talaj, zaj és rezgés.",
           "example": "Egy ipari környezetben egyszerre lehet kibocsátás, zaj, hulladék és vízhasználati probléma.",
           "insight": "A monitoring több réteg adatát kapcsolja össze."
         },
         {
-          "title": "AI és monitoring",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: AI és monitoring",
           "body": "AI használható anomáliafelismerésre, előrejelzésre és monitoring optimalizálásra, de a valóságot továbbra is mérni kell.",
           "example": "Szenzoradatokból korai hiba jelezhető: szivattyú, levegőszennyezés, zajcsúcs, vízminőség-romlás.",
           "insight": "AI nem helyettesíti a mérést; felerősíti az értelmezést."
         },
         {
-          "title": "Országpéldák",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Országpéldák",
           "body": "EU: compliance-heavy monitoring. USA: államonként eltérő rendszerek. Kína: nagy skálájú szenzorhálózatok. Afrika: sok helyen mobil/lokális mérési megoldások.",
           "example": "Ugyanaz a technológia más governance-környezetben másképp működik.",
           "insight": "A monitoring minősége meghatározza a döntés minőségét."
@@ -296,25 +391,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "Mit jelent a monitoring?",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Mit jelent a monitoring?",
           "body": "Monitoring = adatgyűjtés + megfigyelés + értelmezés. Nem csak mérés, hanem döntési infrastruktúra.",
           "example": "Levegő: PM2.5/PM10, NOx, SO₂. Víz: pH, oxigén, baktériumok, nehézfémek. Talaj: olaj, nitrát, toxikus anyagok. Zaj: közlekedés, ipar, építkezés.",
           "insight": "A civilizáció sokszor nem adat-, hanem reakcióhiány miatt késik."
         },
         {
-          "title": "Levegő, víz, talaj, zaj",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Levegő, víz, talaj, zaj",
           "body": "A környezetvédelmi technikus több közegben dolgozhat: levegő, víz, talaj, zaj és rezgés.",
           "example": "Egy ipari környezetben egyszerre lehet kibocsátás, zaj, hulladék és vízhasználati probléma.",
           "insight": "A monitoring több réteg adatát kapcsolja össze."
         },
         {
-          "title": "AI és monitoring",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： AI és monitoring",
           "body": "AI használható anomáliafelismerésre, előrejelzésre és monitoring optimalizálásra, de a valóságot továbbra is mérni kell.",
           "example": "Szenzoradatokból korai hiba jelezhető: szivattyú, levegőszennyezés, zajcsúcs, vízminőség-romlás.",
           "insight": "AI nem helyettesíti a mérést; felerősíti az értelmezést."
         },
         {
-          "title": "Országpéldák",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Országpéldák",
           "body": "EU: compliance-heavy monitoring. USA: államonként eltérő rendszerek. Kína: nagy skálájú szenzorhálózatok. Afrika: sok helyen mobil/lokális mérési megoldások.",
           "example": "Ugyanaz a technológia más governance-környezetben másképp működik.",
           "insight": "A monitoring minősége meghatározza a döntés minőségét."
@@ -322,25 +417,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "Mit jelent a monitoring?",
+          "title": "基于匈牙利语原始内容的本地化初版： Mit jelent a monitoring?",
           "body": "Monitoring = adatgyűjtés + megfigyelés + értelmezés. Nem csak mérés, hanem döntési infrastruktúra.",
           "example": "Levegő: PM2.5/PM10, NOx, SO₂. Víz: pH, oxigén, baktériumok, nehézfémek. Talaj: olaj, nitrát, toxikus anyagok. Zaj: közlekedés, ipar, építkezés.",
           "insight": "A civilizáció sokszor nem adat-, hanem reakcióhiány miatt késik."
         },
         {
-          "title": "Levegő, víz, talaj, zaj",
+          "title": "基于匈牙利语原始内容的本地化初版： Levegő, víz, talaj, zaj",
           "body": "A környezetvédelmi technikus több közegben dolgozhat: levegő, víz, talaj, zaj és rezgés.",
           "example": "Egy ipari környezetben egyszerre lehet kibocsátás, zaj, hulladék és vízhasználati probléma.",
           "insight": "A monitoring több réteg adatát kapcsolja össze."
         },
         {
-          "title": "AI és monitoring",
+          "title": "基于匈牙利语原始内容的本地化初版： AI és monitoring",
           "body": "AI használható anomáliafelismerésre, előrejelzésre és monitoring optimalizálásra, de a valóságot továbbra is mérni kell.",
           "example": "Szenzoradatokból korai hiba jelezhető: szivattyú, levegőszennyezés, zajcsúcs, vízminőség-romlás.",
           "insight": "AI nem helyettesíti a mérést; felerősíti az értelmezést."
         },
         {
-          "title": "Országpéldák",
+          "title": "基于匈牙利语原始内容的本地化初版： Országpéldák",
           "body": "EU: compliance-heavy monitoring. USA: államonként eltérő rendszerek. Kína: nagy skálájú szenzorhálózatok. Afrika: sok helyen mobil/lokális mérési megoldások.",
           "example": "Ugyanaz a technológia más governance-környezetben másképp működik.",
           "insight": "A monitoring minősége meghatározza a döntés minőségét."
@@ -348,25 +443,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "Mit jelent a monitoring?",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Mit jelent a monitoring?",
           "body": "Monitoring = adatgyűjtés + megfigyelés + értelmezés. Nem csak mérés, hanem döntési infrastruktúra.",
           "example": "Levegő: PM2.5/PM10, NOx, SO₂. Víz: pH, oxigén, baktériumok, nehézfémek. Talaj: olaj, nitrát, toxikus anyagok. Zaj: közlekedés, ipar, építkezés.",
           "insight": "A civilizáció sokszor nem adat-, hanem reakcióhiány miatt késik."
         },
         {
-          "title": "Levegő, víz, talaj, zaj",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Levegő, víz, talaj, zaj",
           "body": "A környezetvédelmi technikus több közegben dolgozhat: levegő, víz, talaj, zaj és rezgés.",
           "example": "Egy ipari környezetben egyszerre lehet kibocsátás, zaj, hulladék és vízhasználati probléma.",
           "insight": "A monitoring több réteg adatát kapcsolja össze."
         },
         {
-          "title": "AI és monitoring",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : AI és monitoring",
           "body": "AI használható anomáliafelismerésre, előrejelzésre és monitoring optimalizálásra, de a valóságot továbbra is mérni kell.",
           "example": "Szenzoradatokból korai hiba jelezhető: szivattyú, levegőszennyezés, zajcsúcs, vízminőség-romlás.",
           "insight": "AI nem helyettesíti a mérést; felerősíti az értelmezést."
         },
         {
-          "title": "Országpéldák",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Országpéldák",
           "body": "EU: compliance-heavy monitoring. USA: államonként eltérő rendszerek. Kína: nagy skálájú szenzorhálózatok. Afrika: sok helyen mobil/lokális mérési megoldások.",
           "example": "Ugyanaz a technológia más governance-környezetben másképp működik.",
           "insight": "A monitoring minősége meghatározza a döntés minőségét."
@@ -374,25 +469,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "Mit jelent a monitoring?",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Mit jelent a monitoring?",
           "body": "Monitoring = adatgyűjtés + megfigyelés + értelmezés. Nem csak mérés, hanem döntési infrastruktúra.",
           "example": "Levegő: PM2.5/PM10, NOx, SO₂. Víz: pH, oxigén, baktériumok, nehézfémek. Talaj: olaj, nitrát, toxikus anyagok. Zaj: közlekedés, ipar, építkezés.",
           "insight": "A civilizáció sokszor nem adat-, hanem reakcióhiány miatt késik."
         },
         {
-          "title": "Levegő, víz, talaj, zaj",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Levegő, víz, talaj, zaj",
           "body": "A környezetvédelmi technikus több közegben dolgozhat: levegő, víz, talaj, zaj és rezgés.",
           "example": "Egy ipari környezetben egyszerre lehet kibocsátás, zaj, hulladék és vízhasználati probléma.",
           "insight": "A monitoring több réteg adatát kapcsolja össze."
         },
         {
-          "title": "AI és monitoring",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: AI és monitoring",
           "body": "AI használható anomáliafelismerésre, előrejelzésre és monitoring optimalizálásra, de a valóságot továbbra is mérni kell.",
           "example": "Szenzoradatokból korai hiba jelezhető: szivattyú, levegőszennyezés, zajcsúcs, vízminőség-romlás.",
           "insight": "AI nem helyettesíti a mérést; felerősíti az értelmezést."
         },
         {
-          "title": "Országpéldák",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Országpéldák",
           "body": "EU: compliance-heavy monitoring. USA: államonként eltérő rendszerek. Kína: nagy skálájú szenzorhálózatok. Afrika: sok helyen mobil/lokális mérési megoldások.",
           "example": "Ugyanaz a technológia más governance-környezetben másképp működik.",
           "insight": "A monitoring minősége meghatározza a döntés minőségét."
@@ -403,18 +498,18 @@ export const modules = [
   {
     "id": "waste",
     "titles": {
-      "hu": "Hulladék és circular systems",
-      "en": "Hulladék és circular systems",
-      "de": "Hulladék és circular systems",
-      "jp": "Hulladék és circular systems",
-      "zh": "Hulladék és circular systems",
-      "fr": "Hulladék és circular systems",
-      "es": "Hulladék és circular systems"
+      "hu": "Hulladék és körforgásos rendszerek",
+      "en": "Waste & circular systems",
+      "de": "Abfall & Kreislaufsysteme",
+      "jp": "廃棄物と循環システム",
+      "zh": "废弃物与循环系统",
+      "fr": "Déchets et systèmes circulaires",
+      "es": "Residuos y sistemas circulares"
     },
     "steps": {
       "hu": [
         {
-          "title": "A hulladék mint anyagáramlás",
+          "title": "Hulladék mint anyagáramlás",
           "body": "A hulladék nem egyszerűen szemét, hanem rosszul koordinált anyagáramlás.",
           "example": "Lineáris modell: kitermelés → gyártás → használat → kidobás. Körforgásos modell: használat → javítás/felújítás/refurbish → újrahasználat.",
           "insight": "Hulladékkezelés = civilizációs anyagcsere menedzsment."
@@ -440,25 +535,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "A hulladék mint anyagáramlás",
+          "title": "Localized starter version based on the Hungarian source content: Hulladék mint anyagáramlás",
           "body": "A hulladék nem egyszerűen szemét, hanem rosszul koordinált anyagáramlás.",
           "example": "Lineáris modell: kitermelés → gyártás → használat → kidobás. Körforgásos modell: használat → javítás/felújítás/refurbish → újrahasználat.",
           "insight": "Hulladékkezelés = civilizációs anyagcsere menedzsment."
         },
         {
-          "title": "Refurbish",
+          "title": "Localized starter version based on the Hungarian source content: Refurbish",
           "body": "Refurbish = felújítás / újrahasználatra előkészítés. Példa: régi telefon resetelése, tisztítása, javítása, majd továbbadása.",
           "example": "A CAT S42 felajánlása mikro-circular systems példa: nem kidobás, hanem eszköz újraintegrálása.",
           "insight": "A refurbish meghosszabbítja az eszköz életciklusát."
         },
         {
-          "title": "Governance és logisztika",
+          "title": "Localized starter version based on the Hungarian source content: Governance és logisztika",
           "body": "A körforgásos rendszer nem csak technológia: logisztika, ösztönzők, szabályozás, lakossági viselkedés, infrastruktúra és adatkövetés együtt.",
           "example": "Illegális lerakás, exportált hulladék, e-waste, rossz szelektálási arány mind koordinációs probléma is.",
           "insight": "A circular economy sikere a teljes rendszer fegyelmétől függ."
         },
         {
-          "title": "Országpéldák",
+          "title": "Localized starter version based on the Hungarian source content: Országpéldák",
           "body": "Japán: precíz szétválogatás. Németország: recycling governance. Kína: ipari skála. Afrikai városok: informális újrahasznosítási hálózatok.",
           "example": "Informális rendszerek sokszor hatékonyak, de sérülékenyek és kevésbé védettek.",
           "insight": "Az anyagáramlások kultúrától, szabályozástól és infrastruktúrától függenek."
@@ -466,25 +561,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "A hulladék mint anyagáramlás",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Hulladék mint anyagáramlás",
           "body": "A hulladék nem egyszerűen szemét, hanem rosszul koordinált anyagáramlás.",
           "example": "Lineáris modell: kitermelés → gyártás → használat → kidobás. Körforgásos modell: használat → javítás/felújítás/refurbish → újrahasználat.",
           "insight": "Hulladékkezelés = civilizációs anyagcsere menedzsment."
         },
         {
-          "title": "Refurbish",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Refurbish",
           "body": "Refurbish = felújítás / újrahasználatra előkészítés. Példa: régi telefon resetelése, tisztítása, javítása, majd továbbadása.",
           "example": "A CAT S42 felajánlása mikro-circular systems példa: nem kidobás, hanem eszköz újraintegrálása.",
           "insight": "A refurbish meghosszabbítja az eszköz életciklusát."
         },
         {
-          "title": "Governance és logisztika",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Governance és logisztika",
           "body": "A körforgásos rendszer nem csak technológia: logisztika, ösztönzők, szabályozás, lakossági viselkedés, infrastruktúra és adatkövetés együtt.",
           "example": "Illegális lerakás, exportált hulladék, e-waste, rossz szelektálási arány mind koordinációs probléma is.",
           "insight": "A circular economy sikere a teljes rendszer fegyelmétől függ."
         },
         {
-          "title": "Országpéldák",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Országpéldák",
           "body": "Japán: precíz szétválogatás. Németország: recycling governance. Kína: ipari skála. Afrikai városok: informális újrahasznosítási hálózatok.",
           "example": "Informális rendszerek sokszor hatékonyak, de sérülékenyek és kevésbé védettek.",
           "insight": "Az anyagáramlások kultúrától, szabályozástól és infrastruktúrától függenek."
@@ -492,25 +587,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "A hulladék mint anyagáramlás",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Hulladék mint anyagáramlás",
           "body": "A hulladék nem egyszerűen szemét, hanem rosszul koordinált anyagáramlás.",
           "example": "Lineáris modell: kitermelés → gyártás → használat → kidobás. Körforgásos modell: használat → javítás/felújítás/refurbish → újrahasználat.",
           "insight": "Hulladékkezelés = civilizációs anyagcsere menedzsment."
         },
         {
-          "title": "Refurbish",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Refurbish",
           "body": "Refurbish = felújítás / újrahasználatra előkészítés. Példa: régi telefon resetelése, tisztítása, javítása, majd továbbadása.",
           "example": "A CAT S42 felajánlása mikro-circular systems példa: nem kidobás, hanem eszköz újraintegrálása.",
           "insight": "A refurbish meghosszabbítja az eszköz életciklusát."
         },
         {
-          "title": "Governance és logisztika",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Governance és logisztika",
           "body": "A körforgásos rendszer nem csak technológia: logisztika, ösztönzők, szabályozás, lakossági viselkedés, infrastruktúra és adatkövetés együtt.",
           "example": "Illegális lerakás, exportált hulladék, e-waste, rossz szelektálási arány mind koordinációs probléma is.",
           "insight": "A circular economy sikere a teljes rendszer fegyelmétől függ."
         },
         {
-          "title": "Országpéldák",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Országpéldák",
           "body": "Japán: precíz szétválogatás. Németország: recycling governance. Kína: ipari skála. Afrikai városok: informális újrahasznosítási hálózatok.",
           "example": "Informális rendszerek sokszor hatékonyak, de sérülékenyek és kevésbé védettek.",
           "insight": "Az anyagáramlások kultúrától, szabályozástól és infrastruktúrától függenek."
@@ -518,25 +613,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "A hulladék mint anyagáramlás",
+          "title": "基于匈牙利语原始内容的本地化初版： Hulladék mint anyagáramlás",
           "body": "A hulladék nem egyszerűen szemét, hanem rosszul koordinált anyagáramlás.",
           "example": "Lineáris modell: kitermelés → gyártás → használat → kidobás. Körforgásos modell: használat → javítás/felújítás/refurbish → újrahasználat.",
           "insight": "Hulladékkezelés = civilizációs anyagcsere menedzsment."
         },
         {
-          "title": "Refurbish",
+          "title": "基于匈牙利语原始内容的本地化初版： Refurbish",
           "body": "Refurbish = felújítás / újrahasználatra előkészítés. Példa: régi telefon resetelése, tisztítása, javítása, majd továbbadása.",
           "example": "A CAT S42 felajánlása mikro-circular systems példa: nem kidobás, hanem eszköz újraintegrálása.",
           "insight": "A refurbish meghosszabbítja az eszköz életciklusát."
         },
         {
-          "title": "Governance és logisztika",
+          "title": "基于匈牙利语原始内容的本地化初版： Governance és logisztika",
           "body": "A körforgásos rendszer nem csak technológia: logisztika, ösztönzők, szabályozás, lakossági viselkedés, infrastruktúra és adatkövetés együtt.",
           "example": "Illegális lerakás, exportált hulladék, e-waste, rossz szelektálási arány mind koordinációs probléma is.",
           "insight": "A circular economy sikere a teljes rendszer fegyelmétől függ."
         },
         {
-          "title": "Országpéldák",
+          "title": "基于匈牙利语原始内容的本地化初版： Országpéldák",
           "body": "Japán: precíz szétválogatás. Németország: recycling governance. Kína: ipari skála. Afrikai városok: informális újrahasznosítási hálózatok.",
           "example": "Informális rendszerek sokszor hatékonyak, de sérülékenyek és kevésbé védettek.",
           "insight": "Az anyagáramlások kultúrától, szabályozástól és infrastruktúrától függenek."
@@ -544,25 +639,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "A hulladék mint anyagáramlás",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Hulladék mint anyagáramlás",
           "body": "A hulladék nem egyszerűen szemét, hanem rosszul koordinált anyagáramlás.",
           "example": "Lineáris modell: kitermelés → gyártás → használat → kidobás. Körforgásos modell: használat → javítás/felújítás/refurbish → újrahasználat.",
           "insight": "Hulladékkezelés = civilizációs anyagcsere menedzsment."
         },
         {
-          "title": "Refurbish",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Refurbish",
           "body": "Refurbish = felújítás / újrahasználatra előkészítés. Példa: régi telefon resetelése, tisztítása, javítása, majd továbbadása.",
           "example": "A CAT S42 felajánlása mikro-circular systems példa: nem kidobás, hanem eszköz újraintegrálása.",
           "insight": "A refurbish meghosszabbítja az eszköz életciklusát."
         },
         {
-          "title": "Governance és logisztika",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Governance és logisztika",
           "body": "A körforgásos rendszer nem csak technológia: logisztika, ösztönzők, szabályozás, lakossági viselkedés, infrastruktúra és adatkövetés együtt.",
           "example": "Illegális lerakás, exportált hulladék, e-waste, rossz szelektálási arány mind koordinációs probléma is.",
           "insight": "A circular economy sikere a teljes rendszer fegyelmétől függ."
         },
         {
-          "title": "Országpéldák",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Országpéldák",
           "body": "Japán: precíz szétválogatás. Németország: recycling governance. Kína: ipari skála. Afrikai városok: informális újrahasznosítási hálózatok.",
           "example": "Informális rendszerek sokszor hatékonyak, de sérülékenyek és kevésbé védettek.",
           "insight": "Az anyagáramlások kultúrától, szabályozástól és infrastruktúrától függenek."
@@ -570,25 +665,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "A hulladék mint anyagáramlás",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Hulladék mint anyagáramlás",
           "body": "A hulladék nem egyszerűen szemét, hanem rosszul koordinált anyagáramlás.",
           "example": "Lineáris modell: kitermelés → gyártás → használat → kidobás. Körforgásos modell: használat → javítás/felújítás/refurbish → újrahasználat.",
           "insight": "Hulladékkezelés = civilizációs anyagcsere menedzsment."
         },
         {
-          "title": "Refurbish",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Refurbish",
           "body": "Refurbish = felújítás / újrahasználatra előkészítés. Példa: régi telefon resetelése, tisztítása, javítása, majd továbbadása.",
           "example": "A CAT S42 felajánlása mikro-circular systems példa: nem kidobás, hanem eszköz újraintegrálása.",
           "insight": "A refurbish meghosszabbítja az eszköz életciklusát."
         },
         {
-          "title": "Governance és logisztika",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Governance és logisztika",
           "body": "A körforgásos rendszer nem csak technológia: logisztika, ösztönzők, szabályozás, lakossági viselkedés, infrastruktúra és adatkövetés együtt.",
           "example": "Illegális lerakás, exportált hulladék, e-waste, rossz szelektálási arány mind koordinációs probléma is.",
           "insight": "A circular economy sikere a teljes rendszer fegyelmétől függ."
         },
         {
-          "title": "Országpéldák",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Országpéldák",
           "body": "Japán: precíz szétválogatás. Németország: recycling governance. Kína: ipari skála. Afrikai városok: informális újrahasznosítási hálózatok.",
           "example": "Informális rendszerek sokszor hatékonyak, de sérülékenyek és kevésbé védettek.",
           "insight": "Az anyagáramlások kultúrától, szabályozástól és infrastruktúrától függenek."
@@ -600,12 +695,12 @@ export const modules = [
     "id": "water",
     "titles": {
       "hu": "Vízrendszerek és szennyvíz",
-      "en": "Vízrendszerek és szennyvíz",
-      "de": "Vízrendszerek és szennyvíz",
-      "jp": "Vízrendszerek és szennyvíz",
-      "zh": "Vízrendszerek és szennyvíz",
-      "fr": "Vízrendszerek és szennyvíz",
-      "es": "Vízrendszerek és szennyvíz"
+      "en": "Water systems & wastewater",
+      "de": "Wassersysteme und Abwasser",
+      "jp": "水システムと排水",
+      "zh": "水系统与污水",
+      "fr": "Systèmes d’eau et eaux usées",
+      "es": "Sistemas de agua y aguas residuales"
     },
     "steps": {
       "hu": [
@@ -636,25 +731,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "Víz mint infrastruktúra",
+          "title": "Localized starter version based on the Hungarian source content: Víz mint infrastruktúra",
           "body": "A víz az egyik legkritikusabb infrastruktúra-rendszer: vízkitermelés, tisztítás, tárolás, csőhálózat, szivattyúk, monitoring, szennyvízkezelés.",
           "example": "Amíg működik, láthatatlan. Ha nem működik, gyorsan civilizációs probléma lesz.",
           "insight": "A vízrendszer rejtett, de létfontosságú civilizációs alap."
         },
         {
-          "title": "Szennyvízkezelés",
+          "title": "Localized starter version based on the Hungarian source content: Szennyvízkezelés",
           "body": "Használat → csatornarendszer → mechanikai tisztítás → biológiai tisztítás → vegyi kezelés → iszapkezelés → visszaengedés.",
           "example": "A biológiai tisztítás mikroorganizmusokat használ. Ez természet infrastruktúraként.",
           "insight": "A természetes folyamatok gyakran részei a mérnöki rendszereknek."
         },
         {
-          "title": "Modern kihívások",
+          "title": "Localized starter version based on the Hungarian source content: Modern kihívások",
           "body": "Klímaváltozás: aszály, villámárvíz, vízhiány. Urbanizáció: túlterhelt csatornahálózat. Ipari szennyezés: gyógyszermaradványok, mikroműanyagok, vegyszerek.",
           "example": "Egy város vízrendszere energiafüggő: szivattyúk, tisztítás, elosztás.",
           "insight": "Víz, energia és várostervezés összekapcsolódik."
         },
         {
-          "title": "Országpéldák",
+          "title": "Localized starter version based on the Hungarian source content: Országpéldák",
           "body": "Hollandia: árvízvédelem. Szingapúr: víz-újrahasznosítás. Németország: vízminőségi compliance. Afrikai országok: decentralizált vízhozzáférési megoldások.",
           "example": "A helyi földrajz és intézményi kapacitás meghatározza a vízstratégiát.",
           "insight": "Nincs univerzális vízrendszer; adaptív rendszerek vannak."
@@ -662,25 +757,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "Víz mint infrastruktúra",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Víz mint infrastruktúra",
           "body": "A víz az egyik legkritikusabb infrastruktúra-rendszer: vízkitermelés, tisztítás, tárolás, csőhálózat, szivattyúk, monitoring, szennyvízkezelés.",
           "example": "Amíg működik, láthatatlan. Ha nem működik, gyorsan civilizációs probléma lesz.",
           "insight": "A vízrendszer rejtett, de létfontosságú civilizációs alap."
         },
         {
-          "title": "Szennyvízkezelés",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Szennyvízkezelés",
           "body": "Használat → csatornarendszer → mechanikai tisztítás → biológiai tisztítás → vegyi kezelés → iszapkezelés → visszaengedés.",
           "example": "A biológiai tisztítás mikroorganizmusokat használ. Ez természet infrastruktúraként.",
           "insight": "A természetes folyamatok gyakran részei a mérnöki rendszereknek."
         },
         {
-          "title": "Modern kihívások",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Modern kihívások",
           "body": "Klímaváltozás: aszály, villámárvíz, vízhiány. Urbanizáció: túlterhelt csatornahálózat. Ipari szennyezés: gyógyszermaradványok, mikroműanyagok, vegyszerek.",
           "example": "Egy város vízrendszere energiafüggő: szivattyúk, tisztítás, elosztás.",
           "insight": "Víz, energia és várostervezés összekapcsolódik."
         },
         {
-          "title": "Országpéldák",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Országpéldák",
           "body": "Hollandia: árvízvédelem. Szingapúr: víz-újrahasznosítás. Németország: vízminőségi compliance. Afrikai országok: decentralizált vízhozzáférési megoldások.",
           "example": "A helyi földrajz és intézményi kapacitás meghatározza a vízstratégiát.",
           "insight": "Nincs univerzális vízrendszer; adaptív rendszerek vannak."
@@ -688,25 +783,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "Víz mint infrastruktúra",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Víz mint infrastruktúra",
           "body": "A víz az egyik legkritikusabb infrastruktúra-rendszer: vízkitermelés, tisztítás, tárolás, csőhálózat, szivattyúk, monitoring, szennyvízkezelés.",
           "example": "Amíg működik, láthatatlan. Ha nem működik, gyorsan civilizációs probléma lesz.",
           "insight": "A vízrendszer rejtett, de létfontosságú civilizációs alap."
         },
         {
-          "title": "Szennyvízkezelés",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Szennyvízkezelés",
           "body": "Használat → csatornarendszer → mechanikai tisztítás → biológiai tisztítás → vegyi kezelés → iszapkezelés → visszaengedés.",
           "example": "A biológiai tisztítás mikroorganizmusokat használ. Ez természet infrastruktúraként.",
           "insight": "A természetes folyamatok gyakran részei a mérnöki rendszereknek."
         },
         {
-          "title": "Modern kihívások",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Modern kihívások",
           "body": "Klímaváltozás: aszály, villámárvíz, vízhiány. Urbanizáció: túlterhelt csatornahálózat. Ipari szennyezés: gyógyszermaradványok, mikroműanyagok, vegyszerek.",
           "example": "Egy város vízrendszere energiafüggő: szivattyúk, tisztítás, elosztás.",
           "insight": "Víz, energia és várostervezés összekapcsolódik."
         },
         {
-          "title": "Országpéldák",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Országpéldák",
           "body": "Hollandia: árvízvédelem. Szingapúr: víz-újrahasznosítás. Németország: vízminőségi compliance. Afrikai országok: decentralizált vízhozzáférési megoldások.",
           "example": "A helyi földrajz és intézményi kapacitás meghatározza a vízstratégiát.",
           "insight": "Nincs univerzális vízrendszer; adaptív rendszerek vannak."
@@ -714,25 +809,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "Víz mint infrastruktúra",
+          "title": "基于匈牙利语原始内容的本地化初版： Víz mint infrastruktúra",
           "body": "A víz az egyik legkritikusabb infrastruktúra-rendszer: vízkitermelés, tisztítás, tárolás, csőhálózat, szivattyúk, monitoring, szennyvízkezelés.",
           "example": "Amíg működik, láthatatlan. Ha nem működik, gyorsan civilizációs probléma lesz.",
           "insight": "A vízrendszer rejtett, de létfontosságú civilizációs alap."
         },
         {
-          "title": "Szennyvízkezelés",
+          "title": "基于匈牙利语原始内容的本地化初版： Szennyvízkezelés",
           "body": "Használat → csatornarendszer → mechanikai tisztítás → biológiai tisztítás → vegyi kezelés → iszapkezelés → visszaengedés.",
           "example": "A biológiai tisztítás mikroorganizmusokat használ. Ez természet infrastruktúraként.",
           "insight": "A természetes folyamatok gyakran részei a mérnöki rendszereknek."
         },
         {
-          "title": "Modern kihívások",
+          "title": "基于匈牙利语原始内容的本地化初版： Modern kihívások",
           "body": "Klímaváltozás: aszály, villámárvíz, vízhiány. Urbanizáció: túlterhelt csatornahálózat. Ipari szennyezés: gyógyszermaradványok, mikroműanyagok, vegyszerek.",
           "example": "Egy város vízrendszere energiafüggő: szivattyúk, tisztítás, elosztás.",
           "insight": "Víz, energia és várostervezés összekapcsolódik."
         },
         {
-          "title": "Országpéldák",
+          "title": "基于匈牙利语原始内容的本地化初版： Országpéldák",
           "body": "Hollandia: árvízvédelem. Szingapúr: víz-újrahasznosítás. Németország: vízminőségi compliance. Afrikai országok: decentralizált vízhozzáférési megoldások.",
           "example": "A helyi földrajz és intézményi kapacitás meghatározza a vízstratégiát.",
           "insight": "Nincs univerzális vízrendszer; adaptív rendszerek vannak."
@@ -740,25 +835,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "Víz mint infrastruktúra",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Víz mint infrastruktúra",
           "body": "A víz az egyik legkritikusabb infrastruktúra-rendszer: vízkitermelés, tisztítás, tárolás, csőhálózat, szivattyúk, monitoring, szennyvízkezelés.",
           "example": "Amíg működik, láthatatlan. Ha nem működik, gyorsan civilizációs probléma lesz.",
           "insight": "A vízrendszer rejtett, de létfontosságú civilizációs alap."
         },
         {
-          "title": "Szennyvízkezelés",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Szennyvízkezelés",
           "body": "Használat → csatornarendszer → mechanikai tisztítás → biológiai tisztítás → vegyi kezelés → iszapkezelés → visszaengedés.",
           "example": "A biológiai tisztítás mikroorganizmusokat használ. Ez természet infrastruktúraként.",
           "insight": "A természetes folyamatok gyakran részei a mérnöki rendszereknek."
         },
         {
-          "title": "Modern kihívások",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Modern kihívások",
           "body": "Klímaváltozás: aszály, villámárvíz, vízhiány. Urbanizáció: túlterhelt csatornahálózat. Ipari szennyezés: gyógyszermaradványok, mikroműanyagok, vegyszerek.",
           "example": "Egy város vízrendszere energiafüggő: szivattyúk, tisztítás, elosztás.",
           "insight": "Víz, energia és várostervezés összekapcsolódik."
         },
         {
-          "title": "Országpéldák",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Országpéldák",
           "body": "Hollandia: árvízvédelem. Szingapúr: víz-újrahasznosítás. Németország: vízminőségi compliance. Afrikai országok: decentralizált vízhozzáférési megoldások.",
           "example": "A helyi földrajz és intézményi kapacitás meghatározza a vízstratégiát.",
           "insight": "Nincs univerzális vízrendszer; adaptív rendszerek vannak."
@@ -766,25 +861,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "Víz mint infrastruktúra",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Víz mint infrastruktúra",
           "body": "A víz az egyik legkritikusabb infrastruktúra-rendszer: vízkitermelés, tisztítás, tárolás, csőhálózat, szivattyúk, monitoring, szennyvízkezelés.",
           "example": "Amíg működik, láthatatlan. Ha nem működik, gyorsan civilizációs probléma lesz.",
           "insight": "A vízrendszer rejtett, de létfontosságú civilizációs alap."
         },
         {
-          "title": "Szennyvízkezelés",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Szennyvízkezelés",
           "body": "Használat → csatornarendszer → mechanikai tisztítás → biológiai tisztítás → vegyi kezelés → iszapkezelés → visszaengedés.",
           "example": "A biológiai tisztítás mikroorganizmusokat használ. Ez természet infrastruktúraként.",
           "insight": "A természetes folyamatok gyakran részei a mérnöki rendszereknek."
         },
         {
-          "title": "Modern kihívások",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Modern kihívások",
           "body": "Klímaváltozás: aszály, villámárvíz, vízhiány. Urbanizáció: túlterhelt csatornahálózat. Ipari szennyezés: gyógyszermaradványok, mikroműanyagok, vegyszerek.",
           "example": "Egy város vízrendszere energiafüggő: szivattyúk, tisztítás, elosztás.",
           "insight": "Víz, energia és várostervezés összekapcsolódik."
         },
         {
-          "title": "Országpéldák",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Országpéldák",
           "body": "Hollandia: árvízvédelem. Szingapúr: víz-újrahasznosítás. Németország: vízminőségi compliance. Afrikai országok: decentralizált vízhozzáférési megoldások.",
           "example": "A helyi földrajz és intézményi kapacitás meghatározza a vízstratégiát.",
           "insight": "Nincs univerzális vízrendszer; adaptív rendszerek vannak."
@@ -796,12 +891,12 @@ export const modules = [
     "id": "air",
     "titles": {
       "hu": "Levegőminőség és városi rendszerek",
-      "en": "Levegőminőség és városi rendszerek",
-      "de": "Levegőminőség és városi rendszerek",
-      "jp": "Levegőminőség és városi rendszerek",
-      "zh": "Levegőminőség és városi rendszerek",
-      "fr": "Levegőminőség és városi rendszerek",
-      "es": "Levegőminőség és városi rendszerek"
+      "en": "Air quality & urban systems",
+      "de": "Luftqualität und urbane Systeme",
+      "jp": "大気質と都市システム",
+      "zh": "空气质量与城市系统",
+      "fr": "Qualité de l’air et systèmes urbains",
+      "es": "Calidad del aire y sistemas urbanos"
     },
     "steps": {
       "hu": [
@@ -832,25 +927,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "Levegő mint láthatatlan infrastruktúra",
+          "title": "Localized starter version based on the Hungarian source content: Levegő mint láthatatlan infrastruktúra",
           "body": "A levegő láthatatlan infrastruktúra. A rossz levegő egészségügyi, közlekedési, energiai és várostervezési probléma egyszerre.",
           "example": "PM2.5, PM10, NOx, SO₂, ózon, közlekedési és ipari terhelés.",
           "insight": "Levegőminőség = városi rendszerek eredője."
         },
         {
-          "title": "Városi hősziget",
+          "title": "Localized starter version based on the Hungarian source content: Városi hősziget",
           "body": "Beton és aszfalt hőt tárol, emiatt városban melegebb lehet. Több hűtés kell, több energia fogy, és romolhat a levegő.",
           "example": "Kevesebb zöldterület + sok autó + régi fűtés = rosszabb levegő.",
           "insight": "Klímaadaptáció, energia és levegőminőség összekapcsolódik."
         },
         {
-          "title": "Egészségügyi hatás",
+          "title": "Localized starter version based on the Hungarian source content: Egészségügyi hatás",
           "body": "Rossz levegő növelheti az asztma, szív-érrendszeri problémák és krónikus betegségek kockázatát.",
           "example": "Levegőmonitoring nélkül nehéz célzott döntést hozni.",
           "insight": "Környezetvédelem gyakran közegészségügyi infrastruktúra is."
         },
         {
-          "title": "Országpéldák",
+          "title": "Localized starter version based on the Hungarian source content: Országpéldák",
           "body": "Peking: ipari és közlekedési skála. Delhi: extrém városi terhelés. Los Angeles: közlekedési szmog. Budapest: fűtés + közlekedés + városi szerkezet.",
           "example": "Ugyanaz a légszennyezés más okból és más intézményi keretben jelenik meg.",
           "insight": "A levegőprobléma sosem csak levegőprobléma."
@@ -858,25 +953,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "Levegő mint láthatatlan infrastruktúra",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Levegő mint láthatatlan infrastruktúra",
           "body": "A levegő láthatatlan infrastruktúra. A rossz levegő egészségügyi, közlekedési, energiai és várostervezési probléma egyszerre.",
           "example": "PM2.5, PM10, NOx, SO₂, ózon, közlekedési és ipari terhelés.",
           "insight": "Levegőminőség = városi rendszerek eredője."
         },
         {
-          "title": "Városi hősziget",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Városi hősziget",
           "body": "Beton és aszfalt hőt tárol, emiatt városban melegebb lehet. Több hűtés kell, több energia fogy, és romolhat a levegő.",
           "example": "Kevesebb zöldterület + sok autó + régi fűtés = rosszabb levegő.",
           "insight": "Klímaadaptáció, energia és levegőminőség összekapcsolódik."
         },
         {
-          "title": "Egészségügyi hatás",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Egészségügyi hatás",
           "body": "Rossz levegő növelheti az asztma, szív-érrendszeri problémák és krónikus betegségek kockázatát.",
           "example": "Levegőmonitoring nélkül nehéz célzott döntést hozni.",
           "insight": "Környezetvédelem gyakran közegészségügyi infrastruktúra is."
         },
         {
-          "title": "Országpéldák",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Országpéldák",
           "body": "Peking: ipari és közlekedési skála. Delhi: extrém városi terhelés. Los Angeles: közlekedési szmog. Budapest: fűtés + közlekedés + városi szerkezet.",
           "example": "Ugyanaz a légszennyezés más okból és más intézményi keretben jelenik meg.",
           "insight": "A levegőprobléma sosem csak levegőprobléma."
@@ -884,25 +979,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "Levegő mint láthatatlan infrastruktúra",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Levegő mint láthatatlan infrastruktúra",
           "body": "A levegő láthatatlan infrastruktúra. A rossz levegő egészségügyi, közlekedési, energiai és várostervezési probléma egyszerre.",
           "example": "PM2.5, PM10, NOx, SO₂, ózon, közlekedési és ipari terhelés.",
           "insight": "Levegőminőség = városi rendszerek eredője."
         },
         {
-          "title": "Városi hősziget",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Városi hősziget",
           "body": "Beton és aszfalt hőt tárol, emiatt városban melegebb lehet. Több hűtés kell, több energia fogy, és romolhat a levegő.",
           "example": "Kevesebb zöldterület + sok autó + régi fűtés = rosszabb levegő.",
           "insight": "Klímaadaptáció, energia és levegőminőség összekapcsolódik."
         },
         {
-          "title": "Egészségügyi hatás",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Egészségügyi hatás",
           "body": "Rossz levegő növelheti az asztma, szív-érrendszeri problémák és krónikus betegségek kockázatát.",
           "example": "Levegőmonitoring nélkül nehéz célzott döntést hozni.",
           "insight": "Környezetvédelem gyakran közegészségügyi infrastruktúra is."
         },
         {
-          "title": "Országpéldák",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Országpéldák",
           "body": "Peking: ipari és közlekedési skála. Delhi: extrém városi terhelés. Los Angeles: közlekedési szmog. Budapest: fűtés + közlekedés + városi szerkezet.",
           "example": "Ugyanaz a légszennyezés más okból és más intézményi keretben jelenik meg.",
           "insight": "A levegőprobléma sosem csak levegőprobléma."
@@ -910,25 +1005,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "Levegő mint láthatatlan infrastruktúra",
+          "title": "基于匈牙利语原始内容的本地化初版： Levegő mint láthatatlan infrastruktúra",
           "body": "A levegő láthatatlan infrastruktúra. A rossz levegő egészségügyi, közlekedési, energiai és várostervezési probléma egyszerre.",
           "example": "PM2.5, PM10, NOx, SO₂, ózon, közlekedési és ipari terhelés.",
           "insight": "Levegőminőség = városi rendszerek eredője."
         },
         {
-          "title": "Városi hősziget",
+          "title": "基于匈牙利语原始内容的本地化初版： Városi hősziget",
           "body": "Beton és aszfalt hőt tárol, emiatt városban melegebb lehet. Több hűtés kell, több energia fogy, és romolhat a levegő.",
           "example": "Kevesebb zöldterület + sok autó + régi fűtés = rosszabb levegő.",
           "insight": "Klímaadaptáció, energia és levegőminőség összekapcsolódik."
         },
         {
-          "title": "Egészségügyi hatás",
+          "title": "基于匈牙利语原始内容的本地化初版： Egészségügyi hatás",
           "body": "Rossz levegő növelheti az asztma, szív-érrendszeri problémák és krónikus betegségek kockázatát.",
           "example": "Levegőmonitoring nélkül nehéz célzott döntést hozni.",
           "insight": "Környezetvédelem gyakran közegészségügyi infrastruktúra is."
         },
         {
-          "title": "Országpéldák",
+          "title": "基于匈牙利语原始内容的本地化初版： Országpéldák",
           "body": "Peking: ipari és közlekedési skála. Delhi: extrém városi terhelés. Los Angeles: közlekedési szmog. Budapest: fűtés + közlekedés + városi szerkezet.",
           "example": "Ugyanaz a légszennyezés más okból és más intézményi keretben jelenik meg.",
           "insight": "A levegőprobléma sosem csak levegőprobléma."
@@ -936,25 +1031,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "Levegő mint láthatatlan infrastruktúra",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Levegő mint láthatatlan infrastruktúra",
           "body": "A levegő láthatatlan infrastruktúra. A rossz levegő egészségügyi, közlekedési, energiai és várostervezési probléma egyszerre.",
           "example": "PM2.5, PM10, NOx, SO₂, ózon, közlekedési és ipari terhelés.",
           "insight": "Levegőminőség = városi rendszerek eredője."
         },
         {
-          "title": "Városi hősziget",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Városi hősziget",
           "body": "Beton és aszfalt hőt tárol, emiatt városban melegebb lehet. Több hűtés kell, több energia fogy, és romolhat a levegő.",
           "example": "Kevesebb zöldterület + sok autó + régi fűtés = rosszabb levegő.",
           "insight": "Klímaadaptáció, energia és levegőminőség összekapcsolódik."
         },
         {
-          "title": "Egészségügyi hatás",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Egészségügyi hatás",
           "body": "Rossz levegő növelheti az asztma, szív-érrendszeri problémák és krónikus betegségek kockázatát.",
           "example": "Levegőmonitoring nélkül nehéz célzott döntést hozni.",
           "insight": "Környezetvédelem gyakran közegészségügyi infrastruktúra is."
         },
         {
-          "title": "Országpéldák",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Országpéldák",
           "body": "Peking: ipari és közlekedési skála. Delhi: extrém városi terhelés. Los Angeles: közlekedési szmog. Budapest: fűtés + közlekedés + városi szerkezet.",
           "example": "Ugyanaz a légszennyezés más okból és más intézményi keretben jelenik meg.",
           "insight": "A levegőprobléma sosem csak levegőprobléma."
@@ -962,25 +1057,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "Levegő mint láthatatlan infrastruktúra",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Levegő mint láthatatlan infrastruktúra",
           "body": "A levegő láthatatlan infrastruktúra. A rossz levegő egészségügyi, közlekedési, energiai és várostervezési probléma egyszerre.",
           "example": "PM2.5, PM10, NOx, SO₂, ózon, közlekedési és ipari terhelés.",
           "insight": "Levegőminőség = városi rendszerek eredője."
         },
         {
-          "title": "Városi hősziget",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Városi hősziget",
           "body": "Beton és aszfalt hőt tárol, emiatt városban melegebb lehet. Több hűtés kell, több energia fogy, és romolhat a levegő.",
           "example": "Kevesebb zöldterület + sok autó + régi fűtés = rosszabb levegő.",
           "insight": "Klímaadaptáció, energia és levegőminőség összekapcsolódik."
         },
         {
-          "title": "Egészségügyi hatás",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Egészségügyi hatás",
           "body": "Rossz levegő növelheti az asztma, szív-érrendszeri problémák és krónikus betegségek kockázatát.",
           "example": "Levegőmonitoring nélkül nehéz célzott döntést hozni.",
           "insight": "Környezetvédelem gyakran közegészségügyi infrastruktúra is."
         },
         {
-          "title": "Országpéldák",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Országpéldák",
           "body": "Peking: ipari és közlekedési skála. Delhi: extrém városi terhelés. Los Angeles: közlekedési szmog. Budapest: fűtés + közlekedés + városi szerkezet.",
           "example": "Ugyanaz a légszennyezés más okból és más intézményi keretben jelenik meg.",
           "insight": "A levegőprobléma sosem csak levegőprobléma."
@@ -992,12 +1087,12 @@ export const modules = [
     "id": "law",
     "titles": {
       "hu": "Jogszabályok és compliance",
-      "en": "Jogszabályok és compliance",
-      "de": "Jogszabályok és compliance",
-      "jp": "Jogszabályok és compliance",
-      "zh": "Jogszabályok és compliance",
-      "fr": "Jogszabályok és compliance",
-      "es": "Jogszabályok és compliance"
+      "en": "Law, governance & compliance",
+      "de": "Recht, Governance & Compliance",
+      "jp": "法制度・ガバナンス・コンプライアンス",
+      "zh": "法律、治理与合规",
+      "fr": "Droit, gouvernance et conformité",
+      "es": "Ley, gobernanza y cumplimiento"
     },
     "steps": {
       "hu": [
@@ -1028,25 +1123,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "Miért kell szabályozás?",
+          "title": "Localized starter version based on the Hungarian source content: Miért kell szabályozás?",
           "body": "Sok környezeti probléma rövid távon olcsóbb lenne szabályozás nélkül: szennyezés, illegális lerakás, tisztítás kihagyása, mérés elmaradása.",
           "example": "Ezért határértékek és engedélyezési rendszerek kellenek.",
           "insight": "A szabályozás a hosszú távú externáliák kezelésére szolgál."
         },
         {
-          "title": "Compliance",
+          "title": "Localized starter version based on the Hungarian source content: Compliance",
           "body": "Compliance = szabályoknak való megfelelés. A technikus alkalmazza az előírásokat, dokumentál, mér, ellenőriz és adatot szolgáltat.",
           "example": "Egy gyár kibocsátását mérik, jelentik, ellenőrzik; probléma esetén intézkedni kell.",
           "insight": "A technikus a fizikai valóság és az adminisztratív rendszer között dolgozik."
         },
         {
-          "title": "Digitális compliance",
+          "title": "Localized starter version based on the Hungarian source content: Digitális compliance",
           "body": "Modern környezetvédelemben egyre több online jelentés, szenzoradat, térinformatika és digitális nyomonkövetés van.",
           "example": "Környezetvédelmi adatok, kibocsátások, szennyezett területek és védett értékek nyilvántartása.",
           "insight": "Ez kapcsolódik a software + systems + governance háttérhez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Localized starter version based on the Hungarian source content: Mini kérdés",
           "body": "Mi fontosabb: jó szabály, jó mérés, jó végrehajtás vagy helyi bizalom?",
           "example": "Fenntartható rendszerekben mindegyik réteg kell.",
           "insight": "A governance akkor működik, ha végrehajtási kapacitás is van."
@@ -1054,25 +1149,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "Miért kell szabályozás?",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Miért kell szabályozás?",
           "body": "Sok környezeti probléma rövid távon olcsóbb lenne szabályozás nélkül: szennyezés, illegális lerakás, tisztítás kihagyása, mérés elmaradása.",
           "example": "Ezért határértékek és engedélyezési rendszerek kellenek.",
           "insight": "A szabályozás a hosszú távú externáliák kezelésére szolgál."
         },
         {
-          "title": "Compliance",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Compliance",
           "body": "Compliance = szabályoknak való megfelelés. A technikus alkalmazza az előírásokat, dokumentál, mér, ellenőriz és adatot szolgáltat.",
           "example": "Egy gyár kibocsátását mérik, jelentik, ellenőrzik; probléma esetén intézkedni kell.",
           "insight": "A technikus a fizikai valóság és az adminisztratív rendszer között dolgozik."
         },
         {
-          "title": "Digitális compliance",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Digitális compliance",
           "body": "Modern környezetvédelemben egyre több online jelentés, szenzoradat, térinformatika és digitális nyomonkövetés van.",
           "example": "Környezetvédelmi adatok, kibocsátások, szennyezett területek és védett értékek nyilvántartása.",
           "insight": "Ez kapcsolódik a software + systems + governance háttérhez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Mini kérdés",
           "body": "Mi fontosabb: jó szabály, jó mérés, jó végrehajtás vagy helyi bizalom?",
           "example": "Fenntartható rendszerekben mindegyik réteg kell.",
           "insight": "A governance akkor működik, ha végrehajtási kapacitás is van."
@@ -1080,25 +1175,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "Miért kell szabályozás?",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Miért kell szabályozás?",
           "body": "Sok környezeti probléma rövid távon olcsóbb lenne szabályozás nélkül: szennyezés, illegális lerakás, tisztítás kihagyása, mérés elmaradása.",
           "example": "Ezért határértékek és engedélyezési rendszerek kellenek.",
           "insight": "A szabályozás a hosszú távú externáliák kezelésére szolgál."
         },
         {
-          "title": "Compliance",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Compliance",
           "body": "Compliance = szabályoknak való megfelelés. A technikus alkalmazza az előírásokat, dokumentál, mér, ellenőriz és adatot szolgáltat.",
           "example": "Egy gyár kibocsátását mérik, jelentik, ellenőrzik; probléma esetén intézkedni kell.",
           "insight": "A technikus a fizikai valóság és az adminisztratív rendszer között dolgozik."
         },
         {
-          "title": "Digitális compliance",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Digitális compliance",
           "body": "Modern környezetvédelemben egyre több online jelentés, szenzoradat, térinformatika és digitális nyomonkövetés van.",
           "example": "Környezetvédelmi adatok, kibocsátások, szennyezett területek és védett értékek nyilvántartása.",
           "insight": "Ez kapcsolódik a software + systems + governance háttérhez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Mini kérdés",
           "body": "Mi fontosabb: jó szabály, jó mérés, jó végrehajtás vagy helyi bizalom?",
           "example": "Fenntartható rendszerekben mindegyik réteg kell.",
           "insight": "A governance akkor működik, ha végrehajtási kapacitás is van."
@@ -1106,25 +1201,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "Miért kell szabályozás?",
+          "title": "基于匈牙利语原始内容的本地化初版： Miért kell szabályozás?",
           "body": "Sok környezeti probléma rövid távon olcsóbb lenne szabályozás nélkül: szennyezés, illegális lerakás, tisztítás kihagyása, mérés elmaradása.",
           "example": "Ezért határértékek és engedélyezési rendszerek kellenek.",
           "insight": "A szabályozás a hosszú távú externáliák kezelésére szolgál."
         },
         {
-          "title": "Compliance",
+          "title": "基于匈牙利语原始内容的本地化初版： Compliance",
           "body": "Compliance = szabályoknak való megfelelés. A technikus alkalmazza az előírásokat, dokumentál, mér, ellenőriz és adatot szolgáltat.",
           "example": "Egy gyár kibocsátását mérik, jelentik, ellenőrzik; probléma esetén intézkedni kell.",
           "insight": "A technikus a fizikai valóság és az adminisztratív rendszer között dolgozik."
         },
         {
-          "title": "Digitális compliance",
+          "title": "基于匈牙利语原始内容的本地化初版： Digitális compliance",
           "body": "Modern környezetvédelemben egyre több online jelentés, szenzoradat, térinformatika és digitális nyomonkövetés van.",
           "example": "Környezetvédelmi adatok, kibocsátások, szennyezett területek és védett értékek nyilvántartása.",
           "insight": "Ez kapcsolódik a software + systems + governance háttérhez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "基于匈牙利语原始内容的本地化初版： Mini kérdés",
           "body": "Mi fontosabb: jó szabály, jó mérés, jó végrehajtás vagy helyi bizalom?",
           "example": "Fenntartható rendszerekben mindegyik réteg kell.",
           "insight": "A governance akkor működik, ha végrehajtási kapacitás is van."
@@ -1132,25 +1227,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "Miért kell szabályozás?",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Miért kell szabályozás?",
           "body": "Sok környezeti probléma rövid távon olcsóbb lenne szabályozás nélkül: szennyezés, illegális lerakás, tisztítás kihagyása, mérés elmaradása.",
           "example": "Ezért határértékek és engedélyezési rendszerek kellenek.",
           "insight": "A szabályozás a hosszú távú externáliák kezelésére szolgál."
         },
         {
-          "title": "Compliance",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Compliance",
           "body": "Compliance = szabályoknak való megfelelés. A technikus alkalmazza az előírásokat, dokumentál, mér, ellenőriz és adatot szolgáltat.",
           "example": "Egy gyár kibocsátását mérik, jelentik, ellenőrzik; probléma esetén intézkedni kell.",
           "insight": "A technikus a fizikai valóság és az adminisztratív rendszer között dolgozik."
         },
         {
-          "title": "Digitális compliance",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Digitális compliance",
           "body": "Modern környezetvédelemben egyre több online jelentés, szenzoradat, térinformatika és digitális nyomonkövetés van.",
           "example": "Környezetvédelmi adatok, kibocsátások, szennyezett területek és védett értékek nyilvántartása.",
           "insight": "Ez kapcsolódik a software + systems + governance háttérhez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Mini kérdés",
           "body": "Mi fontosabb: jó szabály, jó mérés, jó végrehajtás vagy helyi bizalom?",
           "example": "Fenntartható rendszerekben mindegyik réteg kell.",
           "insight": "A governance akkor működik, ha végrehajtási kapacitás is van."
@@ -1158,25 +1253,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "Miért kell szabályozás?",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Miért kell szabályozás?",
           "body": "Sok környezeti probléma rövid távon olcsóbb lenne szabályozás nélkül: szennyezés, illegális lerakás, tisztítás kihagyása, mérés elmaradása.",
           "example": "Ezért határértékek és engedélyezési rendszerek kellenek.",
           "insight": "A szabályozás a hosszú távú externáliák kezelésére szolgál."
         },
         {
-          "title": "Compliance",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Compliance",
           "body": "Compliance = szabályoknak való megfelelés. A technikus alkalmazza az előírásokat, dokumentál, mér, ellenőriz és adatot szolgáltat.",
           "example": "Egy gyár kibocsátását mérik, jelentik, ellenőrzik; probléma esetén intézkedni kell.",
           "insight": "A technikus a fizikai valóság és az adminisztratív rendszer között dolgozik."
         },
         {
-          "title": "Digitális compliance",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Digitális compliance",
           "body": "Modern környezetvédelemben egyre több online jelentés, szenzoradat, térinformatika és digitális nyomonkövetés van.",
           "example": "Környezetvédelmi adatok, kibocsátások, szennyezett területek és védett értékek nyilvántartása.",
           "insight": "Ez kapcsolódik a software + systems + governance háttérhez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Mini kérdés",
           "body": "Mi fontosabb: jó szabály, jó mérés, jó végrehajtás vagy helyi bizalom?",
           "example": "Fenntartható rendszerekben mindegyik réteg kell.",
           "insight": "A governance akkor működik, ha végrehajtási kapacitás is van."
@@ -1188,12 +1283,12 @@ export const modules = [
     "id": "nature",
     "titles": {
       "hu": "Természetvédelem és ökológiai rendszerek",
-      "en": "Természetvédelem és ökológiai rendszerek",
-      "de": "Természetvédelem és ökológiai rendszerek",
-      "jp": "Természetvédelem és ökológiai rendszerek",
-      "zh": "Természetvédelem és ökológiai rendszerek",
-      "fr": "Természetvédelem és ökológiai rendszerek",
-      "es": "Természetvédelem és ökológiai rendszerek"
+      "en": "Nature conservation & ecosystems",
+      "de": "Naturschutz und Ökosysteme",
+      "jp": "自然保護と生態系",
+      "zh": "自然保护与生态系统",
+      "fr": "Protection de la nature et écosystèmes",
+      "es": "Conservación y ecosistemas"
     },
     "steps": {
       "hu": [
@@ -1224,25 +1319,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "Ökoszisztéma",
+          "title": "Localized starter version based on the Hungarian source content: Ökoszisztéma",
           "body": "Az ökoszisztéma élőlények és környezetük együtt működő rendszere. Erdő = fák + talaj + víz + rovarok + gombák + madarak + mikroorganizmusok + tápanyagkörforgás.",
           "example": "Egy faj eltűnése láncreakciót okozhat.",
           "insight": "Ökológiai rendszerek interconnected hálózatok."
         },
         {
-          "title": "Biodiverzitás",
+          "title": "Localized starter version based on the Hungarian source content: Biodiverzitás",
           "body": "Biodiverzitás = élővilág sokfélesége. Minél változatosabb egy rendszer, annál stabilabb lehet.",
           "example": "Beporzók eltűnése érinti a mezőgazdaságot, élelmiszertermelést és ökológiai láncokat.",
           "insight": "A természet civilizációs alap-infrastruktúra."
         },
         {
-          "title": "Technikus szerepe",
+          "title": "Localized starter version based on the Hungarian source content: Technikus szerepe",
           "body": "Területfelmérés, védett fajok nyilvántartása, adatgyűjtés, monitoring, dokumentáció, természetvédelmi projektek támogatása.",
           "example": "Terepi munka: mintavétel, megfigyelés, mérés, térképezés.",
           "insight": "A terepi adatok összekötik a valós környezetet a döntési rendszerekkel."
         },
         {
-          "title": "Modern problémák",
+          "title": "Localized starter version based on the Hungarian source content: Modern problémák",
           "body": "Urbanizáció, élőhelyvesztés, klímaváltozás, víz/talaj/műanyag/vegyszerszennyezés.",
           "example": "Természetes rendszerek szolgáltatásai: beporzás, víztisztulás, talajképződés, klímaszabályozás, szénmegkötés.",
           "insight": "A természet nem a civilizáción kívül van; annak alapja."
@@ -1250,25 +1345,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "Ökoszisztéma",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Ökoszisztéma",
           "body": "Az ökoszisztéma élőlények és környezetük együtt működő rendszere. Erdő = fák + talaj + víz + rovarok + gombák + madarak + mikroorganizmusok + tápanyagkörforgás.",
           "example": "Egy faj eltűnése láncreakciót okozhat.",
           "insight": "Ökológiai rendszerek interconnected hálózatok."
         },
         {
-          "title": "Biodiverzitás",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Biodiverzitás",
           "body": "Biodiverzitás = élővilág sokfélesége. Minél változatosabb egy rendszer, annál stabilabb lehet.",
           "example": "Beporzók eltűnése érinti a mezőgazdaságot, élelmiszertermelést és ökológiai láncokat.",
           "insight": "A természet civilizációs alap-infrastruktúra."
         },
         {
-          "title": "Technikus szerepe",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Technikus szerepe",
           "body": "Területfelmérés, védett fajok nyilvántartása, adatgyűjtés, monitoring, dokumentáció, természetvédelmi projektek támogatása.",
           "example": "Terepi munka: mintavétel, megfigyelés, mérés, térképezés.",
           "insight": "A terepi adatok összekötik a valós környezetet a döntési rendszerekkel."
         },
         {
-          "title": "Modern problémák",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Modern problémák",
           "body": "Urbanizáció, élőhelyvesztés, klímaváltozás, víz/talaj/műanyag/vegyszerszennyezés.",
           "example": "Természetes rendszerek szolgáltatásai: beporzás, víztisztulás, talajképződés, klímaszabályozás, szénmegkötés.",
           "insight": "A természet nem a civilizáción kívül van; annak alapja."
@@ -1276,25 +1371,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "Ökoszisztéma",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Ökoszisztéma",
           "body": "Az ökoszisztéma élőlények és környezetük együtt működő rendszere. Erdő = fák + talaj + víz + rovarok + gombák + madarak + mikroorganizmusok + tápanyagkörforgás.",
           "example": "Egy faj eltűnése láncreakciót okozhat.",
           "insight": "Ökológiai rendszerek interconnected hálózatok."
         },
         {
-          "title": "Biodiverzitás",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Biodiverzitás",
           "body": "Biodiverzitás = élővilág sokfélesége. Minél változatosabb egy rendszer, annál stabilabb lehet.",
           "example": "Beporzók eltűnése érinti a mezőgazdaságot, élelmiszertermelést és ökológiai láncokat.",
           "insight": "A természet civilizációs alap-infrastruktúra."
         },
         {
-          "title": "Technikus szerepe",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Technikus szerepe",
           "body": "Területfelmérés, védett fajok nyilvántartása, adatgyűjtés, monitoring, dokumentáció, természetvédelmi projektek támogatása.",
           "example": "Terepi munka: mintavétel, megfigyelés, mérés, térképezés.",
           "insight": "A terepi adatok összekötik a valós környezetet a döntési rendszerekkel."
         },
         {
-          "title": "Modern problémák",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Modern problémák",
           "body": "Urbanizáció, élőhelyvesztés, klímaváltozás, víz/talaj/műanyag/vegyszerszennyezés.",
           "example": "Természetes rendszerek szolgáltatásai: beporzás, víztisztulás, talajképződés, klímaszabályozás, szénmegkötés.",
           "insight": "A természet nem a civilizáción kívül van; annak alapja."
@@ -1302,25 +1397,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "Ökoszisztéma",
+          "title": "基于匈牙利语原始内容的本地化初版： Ökoszisztéma",
           "body": "Az ökoszisztéma élőlények és környezetük együtt működő rendszere. Erdő = fák + talaj + víz + rovarok + gombák + madarak + mikroorganizmusok + tápanyagkörforgás.",
           "example": "Egy faj eltűnése láncreakciót okozhat.",
           "insight": "Ökológiai rendszerek interconnected hálózatok."
         },
         {
-          "title": "Biodiverzitás",
+          "title": "基于匈牙利语原始内容的本地化初版： Biodiverzitás",
           "body": "Biodiverzitás = élővilág sokfélesége. Minél változatosabb egy rendszer, annál stabilabb lehet.",
           "example": "Beporzók eltűnése érinti a mezőgazdaságot, élelmiszertermelést és ökológiai láncokat.",
           "insight": "A természet civilizációs alap-infrastruktúra."
         },
         {
-          "title": "Technikus szerepe",
+          "title": "基于匈牙利语原始内容的本地化初版： Technikus szerepe",
           "body": "Területfelmérés, védett fajok nyilvántartása, adatgyűjtés, monitoring, dokumentáció, természetvédelmi projektek támogatása.",
           "example": "Terepi munka: mintavétel, megfigyelés, mérés, térképezés.",
           "insight": "A terepi adatok összekötik a valós környezetet a döntési rendszerekkel."
         },
         {
-          "title": "Modern problémák",
+          "title": "基于匈牙利语原始内容的本地化初版： Modern problémák",
           "body": "Urbanizáció, élőhelyvesztés, klímaváltozás, víz/talaj/műanyag/vegyszerszennyezés.",
           "example": "Természetes rendszerek szolgáltatásai: beporzás, víztisztulás, talajképződés, klímaszabályozás, szénmegkötés.",
           "insight": "A természet nem a civilizáción kívül van; annak alapja."
@@ -1328,25 +1423,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "Ökoszisztéma",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Ökoszisztéma",
           "body": "Az ökoszisztéma élőlények és környezetük együtt működő rendszere. Erdő = fák + talaj + víz + rovarok + gombák + madarak + mikroorganizmusok + tápanyagkörforgás.",
           "example": "Egy faj eltűnése láncreakciót okozhat.",
           "insight": "Ökológiai rendszerek interconnected hálózatok."
         },
         {
-          "title": "Biodiverzitás",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Biodiverzitás",
           "body": "Biodiverzitás = élővilág sokfélesége. Minél változatosabb egy rendszer, annál stabilabb lehet.",
           "example": "Beporzók eltűnése érinti a mezőgazdaságot, élelmiszertermelést és ökológiai láncokat.",
           "insight": "A természet civilizációs alap-infrastruktúra."
         },
         {
-          "title": "Technikus szerepe",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Technikus szerepe",
           "body": "Területfelmérés, védett fajok nyilvántartása, adatgyűjtés, monitoring, dokumentáció, természetvédelmi projektek támogatása.",
           "example": "Terepi munka: mintavétel, megfigyelés, mérés, térképezés.",
           "insight": "A terepi adatok összekötik a valós környezetet a döntési rendszerekkel."
         },
         {
-          "title": "Modern problémák",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Modern problémák",
           "body": "Urbanizáció, élőhelyvesztés, klímaváltozás, víz/talaj/műanyag/vegyszerszennyezés.",
           "example": "Természetes rendszerek szolgáltatásai: beporzás, víztisztulás, talajképződés, klímaszabályozás, szénmegkötés.",
           "insight": "A természet nem a civilizáción kívül van; annak alapja."
@@ -1354,25 +1449,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "Ökoszisztéma",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Ökoszisztéma",
           "body": "Az ökoszisztéma élőlények és környezetük együtt működő rendszere. Erdő = fák + talaj + víz + rovarok + gombák + madarak + mikroorganizmusok + tápanyagkörforgás.",
           "example": "Egy faj eltűnése láncreakciót okozhat.",
           "insight": "Ökológiai rendszerek interconnected hálózatok."
         },
         {
-          "title": "Biodiverzitás",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Biodiverzitás",
           "body": "Biodiverzitás = élővilág sokfélesége. Minél változatosabb egy rendszer, annál stabilabb lehet.",
           "example": "Beporzók eltűnése érinti a mezőgazdaságot, élelmiszertermelést és ökológiai láncokat.",
           "insight": "A természet civilizációs alap-infrastruktúra."
         },
         {
-          "title": "Technikus szerepe",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Technikus szerepe",
           "body": "Területfelmérés, védett fajok nyilvántartása, adatgyűjtés, monitoring, dokumentáció, természetvédelmi projektek támogatása.",
           "example": "Terepi munka: mintavétel, megfigyelés, mérés, térképezés.",
           "insight": "A terepi adatok összekötik a valós környezetet a döntési rendszerekkel."
         },
         {
-          "title": "Modern problémák",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Modern problémák",
           "body": "Urbanizáció, élőhelyvesztés, klímaváltozás, víz/talaj/műanyag/vegyszerszennyezés.",
           "example": "Természetes rendszerek szolgáltatásai: beporzás, víztisztulás, talajképződés, klímaszabályozás, szénmegkötés.",
           "insight": "A természet nem a civilizáción kívül van; annak alapja."
@@ -1384,12 +1479,12 @@ export const modules = [
     "id": "industry",
     "titles": {
       "hu": "Ipari környezetvédelem és kockázatok",
-      "en": "Ipari környezetvédelem és kockázatok",
-      "de": "Ipari környezetvédelem és kockázatok",
-      "jp": "Ipari környezetvédelem és kockázatok",
-      "zh": "Ipari környezetvédelem és kockázatok",
-      "fr": "Ipari környezetvédelem és kockázatok",
-      "es": "Ipari környezetvédelem és kockázatok"
+      "en": "Industrial environmental protection & risks",
+      "de": "Industrieller Umweltschutz und Risiken",
+      "jp": "産業環境保護とリスク",
+      "zh": "工业环境保护与风险",
+      "fr": "Risques industriels et environnement",
+      "es": "Riesgos industriales y medio ambiente"
     },
     "steps": {
       "hu": [
@@ -1420,25 +1515,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "Ipar és környezeti biztonság",
+          "title": "Localized starter version based on the Hungarian source content: Ipar és környezeti biztonság",
           "body": "Az ipari környezetvédelem célja nem az ipar leállítása, hanem működés és környezeti biztonság összehangolása.",
           "example": "Modern ipar értéket termel, de ha rosszul működik, szennyezést és egészségügyi kockázatot okozhat.",
           "insight": "Ipari rendszer = technológia + emberek + szervezet + környezet."
         },
         {
-          "title": "Mit kell figyelni?",
+          "title": "Localized starter version based on the Hungarian source content: Mit kell figyelni?",
           "body": "Kibocsátás, veszélyes hulladék, tárolás, szállítás, zaj, rezgés, vegyszerszivárgás, tűz, robbanás, talaj- és vízszennyezés.",
           "example": "Szenzorok, monitoring, ellenőrzések, karbantartás, dokumentáció együtt csökkentik a kockázatot.",
           "insight": "Risk management = kockázatkezelés."
         },
         {
-          "title": "Koordinációs hibák",
+          "title": "Localized starter version based on the Hungarian source content: Koordinációs hibák",
           "body": "Nagy ipari problémák mögött gyakran szervezeti és koordinációs hibák vannak: rossz kommunikáció, karbantartáson spórolás, hibás jelentések, lassú reakció.",
           "example": "Nem elég tudni a problémáról; reagálni is kell.",
           "insight": "Sok katasztrófa nem adat-, hanem felelősségi és koordinációs hiba."
         },
         {
-          "title": "Országpéldák",
+          "title": "Localized starter version based on the Hungarian source content: Országpéldák",
           "body": "Németország: ipari compliance. Japán: operational discipline. Kína: ipari skála és gyors implementáció. USA: innováció és fragmentált szabályozás.",
           "example": "Minden ország más kockázatkezelési mintát mutat.",
           "insight": "A biztonság rendszerdizájn kérdés is."
@@ -1446,25 +1541,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "Ipar és környezeti biztonság",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Ipar és környezeti biztonság",
           "body": "Az ipari környezetvédelem célja nem az ipar leállítása, hanem működés és környezeti biztonság összehangolása.",
           "example": "Modern ipar értéket termel, de ha rosszul működik, szennyezést és egészségügyi kockázatot okozhat.",
           "insight": "Ipari rendszer = technológia + emberek + szervezet + környezet."
         },
         {
-          "title": "Mit kell figyelni?",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Mit kell figyelni?",
           "body": "Kibocsátás, veszélyes hulladék, tárolás, szállítás, zaj, rezgés, vegyszerszivárgás, tűz, robbanás, talaj- és vízszennyezés.",
           "example": "Szenzorok, monitoring, ellenőrzések, karbantartás, dokumentáció együtt csökkentik a kockázatot.",
           "insight": "Risk management = kockázatkezelés."
         },
         {
-          "title": "Koordinációs hibák",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Koordinációs hibák",
           "body": "Nagy ipari problémák mögött gyakran szervezeti és koordinációs hibák vannak: rossz kommunikáció, karbantartáson spórolás, hibás jelentések, lassú reakció.",
           "example": "Nem elég tudni a problémáról; reagálni is kell.",
           "insight": "Sok katasztrófa nem adat-, hanem felelősségi és koordinációs hiba."
         },
         {
-          "title": "Országpéldák",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Országpéldák",
           "body": "Németország: ipari compliance. Japán: operational discipline. Kína: ipari skála és gyors implementáció. USA: innováció és fragmentált szabályozás.",
           "example": "Minden ország más kockázatkezelési mintát mutat.",
           "insight": "A biztonság rendszerdizájn kérdés is."
@@ -1472,25 +1567,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "Ipar és környezeti biztonság",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Ipar és környezeti biztonság",
           "body": "Az ipari környezetvédelem célja nem az ipar leállítása, hanem működés és környezeti biztonság összehangolása.",
           "example": "Modern ipar értéket termel, de ha rosszul működik, szennyezést és egészségügyi kockázatot okozhat.",
           "insight": "Ipari rendszer = technológia + emberek + szervezet + környezet."
         },
         {
-          "title": "Mit kell figyelni?",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Mit kell figyelni?",
           "body": "Kibocsátás, veszélyes hulladék, tárolás, szállítás, zaj, rezgés, vegyszerszivárgás, tűz, robbanás, talaj- és vízszennyezés.",
           "example": "Szenzorok, monitoring, ellenőrzések, karbantartás, dokumentáció együtt csökkentik a kockázatot.",
           "insight": "Risk management = kockázatkezelés."
         },
         {
-          "title": "Koordinációs hibák",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Koordinációs hibák",
           "body": "Nagy ipari problémák mögött gyakran szervezeti és koordinációs hibák vannak: rossz kommunikáció, karbantartáson spórolás, hibás jelentések, lassú reakció.",
           "example": "Nem elég tudni a problémáról; reagálni is kell.",
           "insight": "Sok katasztrófa nem adat-, hanem felelősségi és koordinációs hiba."
         },
         {
-          "title": "Országpéldák",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Országpéldák",
           "body": "Németország: ipari compliance. Japán: operational discipline. Kína: ipari skála és gyors implementáció. USA: innováció és fragmentált szabályozás.",
           "example": "Minden ország más kockázatkezelési mintát mutat.",
           "insight": "A biztonság rendszerdizájn kérdés is."
@@ -1498,25 +1593,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "Ipar és környezeti biztonság",
+          "title": "基于匈牙利语原始内容的本地化初版： Ipar és környezeti biztonság",
           "body": "Az ipari környezetvédelem célja nem az ipar leállítása, hanem működés és környezeti biztonság összehangolása.",
           "example": "Modern ipar értéket termel, de ha rosszul működik, szennyezést és egészségügyi kockázatot okozhat.",
           "insight": "Ipari rendszer = technológia + emberek + szervezet + környezet."
         },
         {
-          "title": "Mit kell figyelni?",
+          "title": "基于匈牙利语原始内容的本地化初版： Mit kell figyelni?",
           "body": "Kibocsátás, veszélyes hulladék, tárolás, szállítás, zaj, rezgés, vegyszerszivárgás, tűz, robbanás, talaj- és vízszennyezés.",
           "example": "Szenzorok, monitoring, ellenőrzések, karbantartás, dokumentáció együtt csökkentik a kockázatot.",
           "insight": "Risk management = kockázatkezelés."
         },
         {
-          "title": "Koordinációs hibák",
+          "title": "基于匈牙利语原始内容的本地化初版： Koordinációs hibák",
           "body": "Nagy ipari problémák mögött gyakran szervezeti és koordinációs hibák vannak: rossz kommunikáció, karbantartáson spórolás, hibás jelentések, lassú reakció.",
           "example": "Nem elég tudni a problémáról; reagálni is kell.",
           "insight": "Sok katasztrófa nem adat-, hanem felelősségi és koordinációs hiba."
         },
         {
-          "title": "Országpéldák",
+          "title": "基于匈牙利语原始内容的本地化初版： Országpéldák",
           "body": "Németország: ipari compliance. Japán: operational discipline. Kína: ipari skála és gyors implementáció. USA: innováció és fragmentált szabályozás.",
           "example": "Minden ország más kockázatkezelési mintát mutat.",
           "insight": "A biztonság rendszerdizájn kérdés is."
@@ -1524,25 +1619,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "Ipar és környezeti biztonság",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Ipar és környezeti biztonság",
           "body": "Az ipari környezetvédelem célja nem az ipar leállítása, hanem működés és környezeti biztonság összehangolása.",
           "example": "Modern ipar értéket termel, de ha rosszul működik, szennyezést és egészségügyi kockázatot okozhat.",
           "insight": "Ipari rendszer = technológia + emberek + szervezet + környezet."
         },
         {
-          "title": "Mit kell figyelni?",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Mit kell figyelni?",
           "body": "Kibocsátás, veszélyes hulladék, tárolás, szállítás, zaj, rezgés, vegyszerszivárgás, tűz, robbanás, talaj- és vízszennyezés.",
           "example": "Szenzorok, monitoring, ellenőrzések, karbantartás, dokumentáció együtt csökkentik a kockázatot.",
           "insight": "Risk management = kockázatkezelés."
         },
         {
-          "title": "Koordinációs hibák",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Koordinációs hibák",
           "body": "Nagy ipari problémák mögött gyakran szervezeti és koordinációs hibák vannak: rossz kommunikáció, karbantartáson spórolás, hibás jelentések, lassú reakció.",
           "example": "Nem elég tudni a problémáról; reagálni is kell.",
           "insight": "Sok katasztrófa nem adat-, hanem felelősségi és koordinációs hiba."
         },
         {
-          "title": "Országpéldák",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Országpéldák",
           "body": "Németország: ipari compliance. Japán: operational discipline. Kína: ipari skála és gyors implementáció. USA: innováció és fragmentált szabályozás.",
           "example": "Minden ország más kockázatkezelési mintát mutat.",
           "insight": "A biztonság rendszerdizájn kérdés is."
@@ -1550,25 +1645,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "Ipar és környezeti biztonság",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Ipar és környezeti biztonság",
           "body": "Az ipari környezetvédelem célja nem az ipar leállítása, hanem működés és környezeti biztonság összehangolása.",
           "example": "Modern ipar értéket termel, de ha rosszul működik, szennyezést és egészségügyi kockázatot okozhat.",
           "insight": "Ipari rendszer = technológia + emberek + szervezet + környezet."
         },
         {
-          "title": "Mit kell figyelni?",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Mit kell figyelni?",
           "body": "Kibocsátás, veszélyes hulladék, tárolás, szállítás, zaj, rezgés, vegyszerszivárgás, tűz, robbanás, talaj- és vízszennyezés.",
           "example": "Szenzorok, monitoring, ellenőrzések, karbantartás, dokumentáció együtt csökkentik a kockázatot.",
           "insight": "Risk management = kockázatkezelés."
         },
         {
-          "title": "Koordinációs hibák",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Koordinációs hibák",
           "body": "Nagy ipari problémák mögött gyakran szervezeti és koordinációs hibák vannak: rossz kommunikáció, karbantartáson spórolás, hibás jelentések, lassú reakció.",
           "example": "Nem elég tudni a problémáról; reagálni is kell.",
           "insight": "Sok katasztrófa nem adat-, hanem felelősségi és koordinációs hiba."
         },
         {
-          "title": "Országpéldák",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Országpéldák",
           "body": "Németország: ipari compliance. Japán: operational discipline. Kína: ipari skála és gyors implementáció. USA: innováció és fragmentált szabályozás.",
           "example": "Minden ország más kockázatkezelési mintát mutat.",
           "insight": "A biztonság rendszerdizájn kérdés is."
@@ -1580,12 +1675,12 @@ export const modules = [
     "id": "careers",
     "titles": {
       "hu": "Szakmai szerepek és irányok",
-      "en": "Szakmai szerepek és irányok",
-      "de": "Szakmai szerepek és irányok",
-      "jp": "Szakmai szerepek és irányok",
-      "zh": "Szakmai szerepek és irányok",
-      "fr": "Szakmai szerepek és irányok",
-      "es": "Szakmai szerepek és irányok"
+      "en": "Career directions and skills",
+      "de": "Berufswege und Kompetenzen",
+      "jp": "キャリア方向とスキル",
+      "zh": "职业方向与技能",
+      "fr": "Métiers et compétences",
+      "es": "Carreras y habilidades"
     },
     "steps": {
       "hu": [
@@ -1616,25 +1711,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "Lehetséges területek",
+          "title": "Localized starter version based on the Hungarian source content: Lehetséges területek",
           "body": "Ipari környezetvédelem, vízügy és szennyvíz, hulladékgazdálkodás, természetvédelem, önkormányzat/hatóság, pályázatok, adatszolgáltatás.",
           "example": "A technikus nem egyetlen fix munkát jelent, hanem több rendszerhez kapcsolódhat.",
           "insight": "Ez belépő a valós infrastruktúra- és környezeti rendszerek világába."
         },
         {
-          "title": "Modern skill-ek",
+          "title": "Localized starter version based on the Hungarian source content: Modern skill-ek",
           "body": "Adatkezelés, digitális rendszerek, GIS/térinformatika, szenzoradatok, monitoring platformok, riportok, compliance rendszerek.",
           "example": "Software háttérrel ezek különösen érdekesek lehetnek.",
           "insight": "A jövőben értékes lesz, aki technológiát, infrastruktúrát, adatokat és emberi rendszereket együtt lát."
         },
         {
-          "title": "Saját niche",
+          "title": "Localized starter version based on the Hungarian source content: Saját niche",
           "body": "Environmental systems + operational monitoring + infrastructure coordination + digital governance + sustainability systems.",
           "example": "Nem generic AI enthusiast, hanem operational systems intelligence irány.",
           "insight": "A képzés grounding layer lehet a systems identity-hez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Localized starter version based on the Hungarian source content: Mini kérdés",
           "body": "Melyik érdekel jobban: monitoring/adatok, governance, terepi munka, hulladék, vízügy vagy infrastruktúra?",
           "example": "A válasz lehet mix; a lényeg a koherens mintázat.",
           "insight": "A cél nem azonnal végleges karrier, hanem stabil következő réteg."
@@ -1642,25 +1737,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "Lehetséges területek",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Lehetséges területek",
           "body": "Ipari környezetvédelem, vízügy és szennyvíz, hulladékgazdálkodás, természetvédelem, önkormányzat/hatóság, pályázatok, adatszolgáltatás.",
           "example": "A technikus nem egyetlen fix munkát jelent, hanem több rendszerhez kapcsolódhat.",
           "insight": "Ez belépő a valós infrastruktúra- és környezeti rendszerek világába."
         },
         {
-          "title": "Modern skill-ek",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Modern skill-ek",
           "body": "Adatkezelés, digitális rendszerek, GIS/térinformatika, szenzoradatok, monitoring platformok, riportok, compliance rendszerek.",
           "example": "Software háttérrel ezek különösen érdekesek lehetnek.",
           "insight": "A jövőben értékes lesz, aki technológiát, infrastruktúrát, adatokat és emberi rendszereket együtt lát."
         },
         {
-          "title": "Saját niche",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Saját niche",
           "body": "Environmental systems + operational monitoring + infrastructure coordination + digital governance + sustainability systems.",
           "example": "Nem generic AI enthusiast, hanem operational systems intelligence irány.",
           "insight": "A képzés grounding layer lehet a systems identity-hez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Mini kérdés",
           "body": "Melyik érdekel jobban: monitoring/adatok, governance, terepi munka, hulladék, vízügy vagy infrastruktúra?",
           "example": "A válasz lehet mix; a lényeg a koherens mintázat.",
           "insight": "A cél nem azonnal végleges karrier, hanem stabil következő réteg."
@@ -1668,25 +1763,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "Lehetséges területek",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Lehetséges területek",
           "body": "Ipari környezetvédelem, vízügy és szennyvíz, hulladékgazdálkodás, természetvédelem, önkormányzat/hatóság, pályázatok, adatszolgáltatás.",
           "example": "A technikus nem egyetlen fix munkát jelent, hanem több rendszerhez kapcsolódhat.",
           "insight": "Ez belépő a valós infrastruktúra- és környezeti rendszerek világába."
         },
         {
-          "title": "Modern skill-ek",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Modern skill-ek",
           "body": "Adatkezelés, digitális rendszerek, GIS/térinformatika, szenzoradatok, monitoring platformok, riportok, compliance rendszerek.",
           "example": "Software háttérrel ezek különösen érdekesek lehetnek.",
           "insight": "A jövőben értékes lesz, aki technológiát, infrastruktúrát, adatokat és emberi rendszereket együtt lát."
         },
         {
-          "title": "Saját niche",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Saját niche",
           "body": "Environmental systems + operational monitoring + infrastructure coordination + digital governance + sustainability systems.",
           "example": "Nem generic AI enthusiast, hanem operational systems intelligence irány.",
           "insight": "A képzés grounding layer lehet a systems identity-hez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Mini kérdés",
           "body": "Melyik érdekel jobban: monitoring/adatok, governance, terepi munka, hulladék, vízügy vagy infrastruktúra?",
           "example": "A válasz lehet mix; a lényeg a koherens mintázat.",
           "insight": "A cél nem azonnal végleges karrier, hanem stabil következő réteg."
@@ -1694,25 +1789,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "Lehetséges területek",
+          "title": "基于匈牙利语原始内容的本地化初版： Lehetséges területek",
           "body": "Ipari környezetvédelem, vízügy és szennyvíz, hulladékgazdálkodás, természetvédelem, önkormányzat/hatóság, pályázatok, adatszolgáltatás.",
           "example": "A technikus nem egyetlen fix munkát jelent, hanem több rendszerhez kapcsolódhat.",
           "insight": "Ez belépő a valós infrastruktúra- és környezeti rendszerek világába."
         },
         {
-          "title": "Modern skill-ek",
+          "title": "基于匈牙利语原始内容的本地化初版： Modern skill-ek",
           "body": "Adatkezelés, digitális rendszerek, GIS/térinformatika, szenzoradatok, monitoring platformok, riportok, compliance rendszerek.",
           "example": "Software háttérrel ezek különösen érdekesek lehetnek.",
           "insight": "A jövőben értékes lesz, aki technológiát, infrastruktúrát, adatokat és emberi rendszereket együtt lát."
         },
         {
-          "title": "Saját niche",
+          "title": "基于匈牙利语原始内容的本地化初版： Saját niche",
           "body": "Environmental systems + operational monitoring + infrastructure coordination + digital governance + sustainability systems.",
           "example": "Nem generic AI enthusiast, hanem operational systems intelligence irány.",
           "insight": "A képzés grounding layer lehet a systems identity-hez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "基于匈牙利语原始内容的本地化初版： Mini kérdés",
           "body": "Melyik érdekel jobban: monitoring/adatok, governance, terepi munka, hulladék, vízügy vagy infrastruktúra?",
           "example": "A válasz lehet mix; a lényeg a koherens mintázat.",
           "insight": "A cél nem azonnal végleges karrier, hanem stabil következő réteg."
@@ -1720,25 +1815,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "Lehetséges területek",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Lehetséges területek",
           "body": "Ipari környezetvédelem, vízügy és szennyvíz, hulladékgazdálkodás, természetvédelem, önkormányzat/hatóság, pályázatok, adatszolgáltatás.",
           "example": "A technikus nem egyetlen fix munkát jelent, hanem több rendszerhez kapcsolódhat.",
           "insight": "Ez belépő a valós infrastruktúra- és környezeti rendszerek világába."
         },
         {
-          "title": "Modern skill-ek",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Modern skill-ek",
           "body": "Adatkezelés, digitális rendszerek, GIS/térinformatika, szenzoradatok, monitoring platformok, riportok, compliance rendszerek.",
           "example": "Software háttérrel ezek különösen érdekesek lehetnek.",
           "insight": "A jövőben értékes lesz, aki technológiát, infrastruktúrát, adatokat és emberi rendszereket együtt lát."
         },
         {
-          "title": "Saját niche",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Saját niche",
           "body": "Environmental systems + operational monitoring + infrastructure coordination + digital governance + sustainability systems.",
           "example": "Nem generic AI enthusiast, hanem operational systems intelligence irány.",
           "insight": "A képzés grounding layer lehet a systems identity-hez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Mini kérdés",
           "body": "Melyik érdekel jobban: monitoring/adatok, governance, terepi munka, hulladék, vízügy vagy infrastruktúra?",
           "example": "A válasz lehet mix; a lényeg a koherens mintázat.",
           "insight": "A cél nem azonnal végleges karrier, hanem stabil következő réteg."
@@ -1746,25 +1841,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "Lehetséges területek",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Lehetséges területek",
           "body": "Ipari környezetvédelem, vízügy és szennyvíz, hulladékgazdálkodás, természetvédelem, önkormányzat/hatóság, pályázatok, adatszolgáltatás.",
           "example": "A technikus nem egyetlen fix munkát jelent, hanem több rendszerhez kapcsolódhat.",
           "insight": "Ez belépő a valós infrastruktúra- és környezeti rendszerek világába."
         },
         {
-          "title": "Modern skill-ek",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Modern skill-ek",
           "body": "Adatkezelés, digitális rendszerek, GIS/térinformatika, szenzoradatok, monitoring platformok, riportok, compliance rendszerek.",
           "example": "Software háttérrel ezek különösen érdekesek lehetnek.",
           "insight": "A jövőben értékes lesz, aki technológiát, infrastruktúrát, adatokat és emberi rendszereket együtt lát."
         },
         {
-          "title": "Saját niche",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Saját niche",
           "body": "Environmental systems + operational monitoring + infrastructure coordination + digital governance + sustainability systems.",
           "example": "Nem generic AI enthusiast, hanem operational systems intelligence irány.",
           "insight": "A képzés grounding layer lehet a systems identity-hez."
         },
         {
-          "title": "Mini kérdés",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Mini kérdés",
           "body": "Melyik érdekel jobban: monitoring/adatok, governance, terepi munka, hulladék, vízügy vagy infrastruktúra?",
           "example": "A válasz lehet mix; a lényeg a koherens mintázat.",
           "insight": "A cél nem azonnal végleges karrier, hanem stabil következő réteg."
@@ -1776,12 +1871,12 @@ export const modules = [
     "id": "platform",
     "titles": {
       "hu": "App és tanulási platform roadmap",
-      "en": "App és tanulási platform roadmap",
-      "de": "App és tanulási platform roadmap",
-      "jp": "App és tanulási platform roadmap",
-      "zh": "App és tanulási platform roadmap",
-      "fr": "App és tanulási platform roadmap",
-      "es": "App és tanulási platform roadmap"
+      "en": "App and platform roadmap",
+      "de": "App- und Plattform-Roadmap",
+      "jp": "アプリとプラットフォーム計画",
+      "zh": "应用和平台路线图",
+      "fr": "Feuille de route de l’application",
+      "es": "Hoja de ruta de la app"
     },
     "steps": {
       "hu": [
@@ -1793,7 +1888,7 @@ export const modules = [
         },
         {
           "title": "Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, japán, kínai, francia, spanyol.",
+          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
           "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
           "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
         },
@@ -1812,25 +1907,25 @@ export const modules = [
       ],
       "en": [
         {
-          "title": "App alapötlet",
+          "title": "Localized starter version based on the Hungarian source content: App alapötlet",
           "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
           "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
           "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
         },
         {
-          "title": "Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, japán, kínai, francia, spanyol.",
+          "title": "Localized starter version based on the Hungarian source content: Többnyelvűség",
+          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
           "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
           "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
         },
         {
-          "title": "Globális országpéldák",
+          "title": "Localized starter version based on the Hungarian source content: Globális országpéldák",
           "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
           "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
           "insight": "Different societies solve similar environmental problems through different coordination systems."
         },
         {
-          "title": "Jövőbeli funkciók",
+          "title": "Localized starter version based on the Hungarian source content: Jövőbeli funkciók",
           "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
           "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
           "insight": "Global environmental systems literacy platform."
@@ -1838,25 +1933,25 @@ export const modules = [
       ],
       "de": [
         {
-          "title": "App alapötlet",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: App alapötlet",
           "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
           "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
           "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
         },
         {
-          "title": "Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, japán, kínai, francia, spanyol.",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Többnyelvűség",
+          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
           "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
           "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
         },
         {
-          "title": "Globális országpéldák",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Globális országpéldák",
           "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
           "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
           "insight": "Different societies solve similar environmental problems through different coordination systems."
         },
         {
-          "title": "Jövőbeli funkciók",
+          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Jövőbeli funkciók",
           "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
           "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
           "insight": "Global environmental systems literacy platform."
@@ -1864,25 +1959,25 @@ export const modules = [
       ],
       "jp": [
         {
-          "title": "App alapötlet",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： App alapötlet",
           "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
           "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
           "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
         },
         {
-          "title": "Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, japán, kínai, francia, spanyol.",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Többnyelvűség",
+          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
           "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
           "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
         },
         {
-          "title": "Globális országpéldák",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Globális országpéldák",
           "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
           "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
           "insight": "Different societies solve similar environmental problems through different coordination systems."
         },
         {
-          "title": "Jövőbeli funkciók",
+          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Jövőbeli funkciók",
           "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
           "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
           "insight": "Global environmental systems literacy platform."
@@ -1890,25 +1985,25 @@ export const modules = [
       ],
       "zh": [
         {
-          "title": "App alapötlet",
+          "title": "基于匈牙利语原始内容的本地化初版： App alapötlet",
           "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
           "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
           "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
         },
         {
-          "title": "Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, japán, kínai, francia, spanyol.",
+          "title": "基于匈牙利语原始内容的本地化初版： Többnyelvűség",
+          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
           "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
           "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
         },
         {
-          "title": "Globális országpéldák",
+          "title": "基于匈牙利语原始内容的本地化初版： Globális országpéldák",
           "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
           "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
           "insight": "Different societies solve similar environmental problems through different coordination systems."
         },
         {
-          "title": "Jövőbeli funkciók",
+          "title": "基于匈牙利语原始内容的本地化初版： Jövőbeli funkciók",
           "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
           "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
           "insight": "Global environmental systems literacy platform."
@@ -1916,25 +2011,25 @@ export const modules = [
       ],
       "fr": [
         {
-          "title": "App alapötlet",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : App alapötlet",
           "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
           "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
           "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
         },
         {
-          "title": "Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, japán, kínai, francia, spanyol.",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Többnyelvűség",
+          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
           "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
           "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
         },
         {
-          "title": "Globális országpéldák",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Globális országpéldák",
           "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
           "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
           "insight": "Different societies solve similar environmental problems through different coordination systems."
         },
         {
-          "title": "Jövőbeli funkciók",
+          "title": "Version localisée initiale basée sur le contenu source hongrois : Jövőbeli funkciók",
           "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
           "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
           "insight": "Global environmental systems literacy platform."
@@ -1942,25 +2037,25 @@ export const modules = [
       ],
       "es": [
         {
-          "title": "App alapötlet",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: App alapötlet",
           "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
           "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
           "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
         },
         {
-          "title": "Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, japán, kínai, francia, spanyol.",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Többnyelvűség",
+          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
           "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
           "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
         },
         {
-          "title": "Globális országpéldák",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Globális országpéldák",
           "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
           "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
           "insight": "Different societies solve similar environmental problems through different coordination systems."
         },
         {
-          "title": "Jövőbeli funkciók",
+          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Jövőbeli funkciók",
           "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
           "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
           "insight": "Global environmental systems literacy platform."
