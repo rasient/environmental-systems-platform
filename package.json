@@ -1,6 +1,6 @@
 {
-  "name": "environmental-systems-platform-full-v3",
-  "version": "3.0.0",
+  "name": "environmental-systems-platform-full-v4",
+  "version": "4.0.0",
   "private": true,
   "type": "module",
   "dependencies": {

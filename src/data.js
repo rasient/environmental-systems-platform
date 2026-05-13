@@ -125,7 +125,7 @@ export const modules = [
         {
           "title": "Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási vagy ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
@@ -151,7 +151,7 @@ export const modules = [
         {
           "title": "Localized starter version based on the Hungarian source content: Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási vagy ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
@@ -177,7 +177,7 @@ export const modules = [
         {
           "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási vagy ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
@@ -203,7 +203,7 @@ export const modules = [
         {
           "title": "ハンガリー語の元内容に基づくローカライズ初期版： Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási vagy ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
@@ -229,7 +229,7 @@ export const modules = [
         {
           "title": "基于匈牙利语原始内容的本地化初版： Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási vagy ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
@@ -255,7 +255,7 @@ export const modules = [
         {
           "title": "Version localisée initiale basée sur le contenu source hongrois : Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási vagy ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
@@ -281,7 +281,7 @@ export const modules = [
         {
           "title": "Versión inicial localizada basada en el contenido fuente húngaro: Input → Process → Output → Feedback",
           "body": "Szinte minden környezeti és infrastrukturális rendszer így működik: bemenet, folyamat, kimenet, majd visszacsatolás.",
-          "example": "Szennyvíz: háztartási/iperszennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
+          "example": "Szennyvíz: háztartási vagy ipari szennyezés → csatorna/tisztítás → tisztított víz/iszap → mérés és hatósági feedback.",
           "insight": "A probléma gyakran nem az outputnál, hanem a hibás vagy késő feedback loopnál kezdődik."
         },
         {
@@ -1863,202 +1863,6 @@ export const modules = [
           "body": "Melyik érdekel jobban: monitoring/adatok, governance, terepi munka, hulladék, vízügy vagy infrastruktúra?",
           "example": "A válasz lehet mix; a lényeg a koherens mintázat.",
           "insight": "A cél nem azonnal végleges karrier, hanem stabil következő réteg."
-        }
-      ]
-    }
-  },
-  {
-    "id": "platform",
-    "titles": {
-      "hu": "App és tanulási platform roadmap",
-      "en": "App and platform roadmap",
-      "de": "App- und Plattform-Roadmap",
-      "jp": "アプリとプラットフォーム計画",
-      "zh": "应用和平台路线图",
-      "fr": "Feuille de route de l’application",
-      "es": "Hoja de ruta de la app"
-    },
-    "steps": {
-      "hu": [
-        {
-          "title": "App alapötlet",
-          "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
-          "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
-          "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
-        },
-        {
-          "title": "Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
-          "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
-          "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
-        },
-        {
-          "title": "Globális országpéldák",
-          "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
-          "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
-          "insight": "Different societies solve similar environmental problems through different coordination systems."
-        },
-        {
-          "title": "Jövőbeli funkciók",
-          "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
-          "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
-          "insight": "Global environmental systems literacy platform."
-        }
-      ],
-      "en": [
-        {
-          "title": "Localized starter version based on the Hungarian source content: App alapötlet",
-          "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
-          "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
-          "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
-        },
-        {
-          "title": "Localized starter version based on the Hungarian source content: Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
-          "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
-          "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
-        },
-        {
-          "title": "Localized starter version based on the Hungarian source content: Globális országpéldák",
-          "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
-          "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
-          "insight": "Different societies solve similar environmental problems through different coordination systems."
-        },
-        {
-          "title": "Localized starter version based on the Hungarian source content: Jövőbeli funkciók",
-          "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
-          "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
-          "insight": "Global environmental systems literacy platform."
-        }
-      ],
-      "de": [
-        {
-          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: App alapötlet",
-          "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
-          "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
-          "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
-        },
-        {
-          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
-          "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
-          "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
-        },
-        {
-          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Globális országpéldák",
-          "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
-          "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
-          "insight": "Different societies solve similar environmental problems through different coordination systems."
-        },
-        {
-          "title": "Lokalisierte Startversion basierend auf dem ungarischen Ausgangsinhalt: Jövőbeli funkciók",
-          "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
-          "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
-          "insight": "Global environmental systems literacy platform."
-        }
-      ],
-      "jp": [
-        {
-          "title": "ハンガリー語の元内容に基づくローカライズ初期版： App alapötlet",
-          "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
-          "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
-          "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
-        },
-        {
-          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
-          "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
-          "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
-        },
-        {
-          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Globális országpéldák",
-          "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
-          "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
-          "insight": "Different societies solve similar environmental problems through different coordination systems."
-        },
-        {
-          "title": "ハンガリー語の元内容に基づくローカライズ初期版： Jövőbeli funkciók",
-          "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
-          "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
-          "insight": "Global environmental systems literacy platform."
-        }
-      ],
-      "zh": [
-        {
-          "title": "基于匈牙利语原始内容的本地化初版： App alapötlet",
-          "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
-          "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
-          "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
-        },
-        {
-          "title": "基于匈牙利语原始内容的本地化初版： Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
-          "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
-          "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
-        },
-        {
-          "title": "基于匈牙利语原始内容的本地化初版： Globális országpéldák",
-          "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
-          "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
-          "insight": "Different societies solve similar environmental problems through different coordination systems."
-        },
-        {
-          "title": "基于匈牙利语原始内容的本地化初版： Jövőbeli funkciók",
-          "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
-          "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
-          "insight": "Global environmental systems literacy platform."
-        }
-      ],
-      "fr": [
-        {
-          "title": "Version localisée initiale basée sur le contenu source hongrois : App alapötlet",
-          "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
-          "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
-          "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
-        },
-        {
-          "title": "Version localisée initiale basée sur le contenu source hongrois : Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
-          "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
-          "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
-        },
-        {
-          "title": "Version localisée initiale basée sur le contenu source hongrois : Globális országpéldák",
-          "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
-          "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
-          "insight": "Different societies solve similar environmental problems through different coordination systems."
-        },
-        {
-          "title": "Version localisée initiale basée sur le contenu source hongrois : Jövőbeli funkciók",
-          "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
-          "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
-          "insight": "Global environmental systems literacy platform."
-        }
-      ],
-      "es": [
-        {
-          "title": "Versión inicial localizada basada en el contenido fuente húngaro: App alapötlet",
-          "body": "Multilingual step-by-step environmental systems learning platform. Nem csak tananyag, hanem systems map.",
-          "example": "Next-alapú flow: kis lépések, systems insight, országpéldák, mini kérdések.",
-          "insight": "Az app a tanulási rendszerből nő ki, nem fordítva."
-        },
-        {
-          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Többnyelvűség",
-          "body": "Nyelvek: magyar, angol, német, később japán, kínai, francia, spanyol stb.",
-          "example": "A többnyelvűség nem csak fordítás, hanem különböző governance és infrastruktúra-kultúrák összehasonlítása.",
-          "insight": "Ugyanaz a probléma más társadalmi rendszerben más megoldást kap."
-        },
-        {
-          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Globális országpéldák",
-          "body": "USA, Kína, Japán, Németország, Hollandia, Franciaország, Magyarország, Kenya, Dél-Afrika és más országok.",
-          "example": "Water systems, waste systems, air quality, energy, monitoring, urban systems összehasonlítása.",
-          "insight": "Different societies solve similar environmental problems through different coordination systems."
-        },
-        {
-          "title": "Versión inicial localizada basada en el contenido fuente húngaro: Jövőbeli funkciók",
-          "body": "Fogalomtár, quiz, progress tracking, dashboard mockup, interactive world systems map, AI tutor, GitHub portfolio, Systems Lab community integráció.",
-          "example": "Ez lehet portfolio projekt és tanulási eszköz egyszerre.",
-          "insight": "Global environmental systems literacy platform."
         }
       ]
     }

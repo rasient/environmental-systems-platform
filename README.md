@@ -1,10 +1,9 @@
-# Environmental Systems Learning Platform Full v3
+# Environmental Systems Learning Platform Full v4
 
-Fixes:
-- Language switching now updates UI and content state.
-- UI labels are localized: title, progress, module labels, box titles, buttons, step labels.
-- Added complete step structure from the learning path.
-- Added country/example/context and systems insight blocks.
+Changes:
+- Removed the previous final app/platform roadmap module.
+- Fixed typo: "iperszennyezés" -> "ipari szennyezés".
+- Kept the learning platform focused on environmental systems learning modules.
 
 Deploy:
 - Framework: Vite
